@@ -13,12 +13,13 @@ export default function NavBar() {
     <header>
         <Navbar expand="lg" className="fw-bold">
           <Container>
+            <img src="public\img\usuario.png" className="user-header" alt="" />
             <Navbar.Brand href="#home">My Tinerary</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ms-auto">
                 {<Nav.Link href="#home">Home</Nav.Link>}
-                {<Nav.Link href="#link">Cities</Nav.Link>}
+                {<Nav.Link href="about:blank" target="_blank">Cities</Nav.Link>}
                 <div className="login-h rounded px-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -42,6 +43,8 @@ export default function NavBar() {
             </Navbar.Collapse>
           </Container>
         </Navbar>
+
+        
       </header>
   )
 }

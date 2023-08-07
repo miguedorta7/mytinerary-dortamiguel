@@ -1,9 +1,11 @@
+
 import CardPage from "../components/CardPage";
-import Arrow from "../components/arrow";
-import CardPolaroid from "../components/CardPolaroid";
+import Carousel from "../components/Carousel";
 
 
 export default function HomePage() {
+
+  
 
     let data = [
         { id: "america1", city: "Cancun", photo: "/img/america/cancun.jpg" },
@@ -24,25 +26,17 @@ export default function HomePage() {
         { id: "oceania4", city: "Wellington", photo: "/img/oceania/wellington.jpg",},
       ];
     
-
   return (
     <main>
           <div className="div-card">
             <div className="div-caja-card">
               <CardPage />
-              {/* <CarouselPage/>  */}
-            </div>
-            
-            
-            <div className="div-arrows d-flex justify-content-center">
-              <Arrow direction={"M15.75 19.5L8.25 12l7.5-7.5"} />
-              <div className="div-container-img">
-                {data.slice(8,12).map(each => <CardPolaroid key={each.id} src={each.photo} alt={each.id} text={each.city} />)}
-              </div>
-              <Arrow direction={"M8.25 4.5l7.5 7.5-7.5 7.5"} />
-            </div>
+            </div> 
+            <div>
+            <h1>Popular Mytineraries!</h1>
+            <Carousel data= {data}/>
+              </div>    
 
-  
           </div>
         </main>
   )

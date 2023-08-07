@@ -9,6 +9,7 @@
   text-align: center;
 }
 
+
 /*   * {
   margin: 0;
   padding: 0;
@@ -40,6 +41,7 @@ height: 100vh;
 }
 
 .navbar-brand{
+  margin-left: 20px;
   font-size: 32px ;
 }
 
@@ -164,9 +166,9 @@ margin-bottom: 60px;
 left: 35px;
 height: 100px;
 width: 5%;
+cursor: pointer;
 
 }
-
 
 
 .div-caja-card{
@@ -254,13 +256,22 @@ margin-right: 0%;
   flex-wrap: nowrap;
   
 }
-.arrows{
-  display: none;
+
+
+.user-header{
+  width:  40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
 }
 
 
 }
 
+.user-header{
+  width:  40px;
+  height: 40px;
+}
 
 
 
