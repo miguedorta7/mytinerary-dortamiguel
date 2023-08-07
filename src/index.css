@@ -231,15 +231,14 @@ text-align: center;
 @media  (max-width:1368px){
 .div-arrows{
   
-  width: 100vw;
+  width: 90vw;
   height: 100vh;
-  margin: 0px;
   padding-top: 40%;
   display: flex;
   flex-wrap: wrap;
-
   flex-direction: column;
-  margin-left: 20%;
+  margin-left: 5%;
+  margin-right: 5%;
 
   
 } 
