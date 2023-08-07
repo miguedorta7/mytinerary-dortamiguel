@@ -1,84 +1,115 @@
+/* *{
+  box-sizing: border-box;
+  margin: 0px;
+} */
 #root {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 2rem;
-    text-align: center;
-  }
-
-  .container{
-    width: 1,291px;
-    height: 64px;
-    top: 32px;
-    left: 219px;
-  }
-
-  .navbar-nav{
-    width: 159px;
-    height: 64px;
-    font-size: 24px;
-  }
-
-  .navbar-brand{
-    font-size: 32px ;
-  }
-  
-.svg-login{
-    padding: 80px;
+  max-width: 1728px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
 }
-  
+
+
+/*   * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*/
+/* body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}  */
+
+/* main{
+height: 100vh;
+} */
+
+.container{
+  width: 1,291px;
+  height: 64px;
+  top: 32px;
+  left: 219px;
+}
+
+.navbar-nav{
+  width: 159px;
+  height: 64px;
+  font-size: 24px;
+}
+
+.navbar-brand{
+  margin-left: 20px;
+  font-size: 32px ;
+}
+
+.svg-login{
+  padding: 80px;
+}
+
 .login-h{
-    background: #4F46E5;
-    display: flex;
-    flex-direction: row;
-    
-  }
+  background: #4F46E5;
+  display: flex;
+  flex-direction: row;
+  
+}
 
 
 .div-card{
-  width: 1291px;
-  height: 304px;
-  margin-top: 414px;
-  left: 219px;
-  display: flex;
-  justify-content:space-between ;
-  
+width: 1291px;
+height: 304px;
+margin-top: 414px;
+left: 219px;
+display: flex;
+justify-content: space-around ;
+
 }
 
 .layout{
 
-  width: 308px;
-  height: 200px;
+width: 308px;
+height: 200px;
+}
+
+.div-card{
+width: 100%;
+display: flex;
 }
 
 .card{
-  width: 742px;
-  border:none;
+margin-left: 172px;
+width: 450px;
+border:none;
 }
 
 .card-text{
-  font-size: 18px;
-  width: 800px;
-  padding-right: 200px;
-  height: 150px;
+font-size: 18px;
+width: 800px;
+padding-right: 200px;
+height: 150px;
 }
 
 
 .btn-view{
-  background: #4F46E5;
-  font-weight: 600;
-  width: 346px;
-  height: 64px;
-  border-radius: 8px;
-  padding: 0px, 20px, 16px, 20px;
-  gap: 16px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 28px;
+background: #4F46E5;
+font-weight: 600;
+width: 346px;
+height: 64px;
+border-radius: 8px;
+padding: 0px, 20px, 16px, 20px;
+gap: 16px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+font-size: 28px;
 }
 
 .card-header{
+width: 500px;
+height: 64px;
 padding-top: 10px ;
 text-align: start;
 background: white;
@@ -86,3 +117,163 @@ border: none;
 font-weight: bolder;
 font-size: xx-large;
 }
+
+.text-start{
+width: 170%;
+}
+
+.div-arrows{
+height: 650px;
+margin: 0px;
+padding: 0px;
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+margin-right: 100px;
+}
+
+.div-container-img{
+width: 790px;
+height: 550px;
+margin: 10px;
+margin-top: 0px;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+
+}
+
+.div-img{
+margin: auto;
+color: white;
+}
+
+.img{
+width: 308px;
+height: 200px;
+border-radius: 10%;
+box-shadow: 3px 4px 10px 0 #000;
+}
+
+.text-img{
+color: black;
+font-size: xx-large;
+
+}
+
+.arrows{
+margin-bottom: 60px;
+left: 35px;
+height: 100px;
+width: 5%;
+cursor: pointer;
+
+}
+
+
+.div-caja-card{
+height: 100px;
+margin-top: 100px;
+}
+
+
+/*************************************************************************************************************/
+
+@media (max-width:1744px){
+.navbar-nav{
+width: 25%;
+padding-right: 40px;
+}
+
+}
+
+@media (max-width:1363px){
+.navbar-nav{
+  width: 37%;
+  padding-right: 40px;
+}
+  
+}
+
+@media (max-width:1367px){
+.div-card{
+  padding: auto;
+  margin-top: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 170vh;
+
+}
+
+}
+
+@media (max-width:1368px){
+.div-caja-card{
+margin: 0;
+padding-top: 10%;
+padding-bottom: 10%;
+margin-bottom: 10%;
+text-align: center;
+}
+}
+
+/*************************************  Carousel Media query *****************************/
+
+/* @media (max-width:1368px){
+.caja-carusel{
+  border: solid black;
+  display: inline-block;
+  flex-direction: column;
+}
+} */
+
+@media  (max-width:1368px){
+.div-arrows{
+  
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  padding-top: 40%;
+  display: flex;
+  flex-wrap: wrap;
+
+  flex-direction: column;
+  margin-left: 20%;
+
+  
+} 
+}
+
+@media (max-width:1368px) {
+  .div-container-img{
+    height: 100vh;
+    margin-top: 25%;
+margin-left: 0px;
+margin-right: 0%;
+  width: 60vh;
+    display: flex;
+  flex-wrap: nowrap;
+  
+}
+
+
+.user-header{
+  width:  40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+}
+
+.user-header{
+  width:  40px;
+  height: 40px;
+}
+
+
+
+
+
