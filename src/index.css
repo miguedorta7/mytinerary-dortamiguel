@@ -37,17 +37,25 @@ height: 100vh;
 .navbar-nav{
   width: 159px;
   height: 64px;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .navbar-brand{
-  margin-left: 20px;
+  margin-left: 2rem;
   font-size: 32px ;
 }
 
 .svg-login{
   padding: 80px;
 }
+
+.user-header{
+  width:  40px;
+  height: 40px;
+
+  
+}
+
 
 .login-h{
   background: #4F46E5;
@@ -58,12 +66,11 @@ height: 100vh;
 
 
 .div-card{
-width: 1291px;
-height: 304px;
-margin-top: 414px;
-left: 219px;
-display: flex;
-justify-content: space-around ;
+width: 100vw;
+height: 100vh;
+margin-top: 20rem;
+
+
 
 }
 
@@ -73,6 +80,7 @@ width: 308px;
 height: 200px;
 }
 
+/**************** Card ******************/
 .div-card{
 width: 100%;
 display: flex;
@@ -80,26 +88,24 @@ display: flex;
 
 .card{
 margin-left: 172px;
-width: 450px;
+width: 500px;
 border:none;
 }
 
 .card-text{
-font-size: 18px;
-width: 800px;
-padding-right: 200px;
-height: 150px;
+  font-size: 1.3rem;
+  width: 25rem;
+ 
 }
 
 
 .btn-view{
 background: #4F46E5;
 font-weight: 600;
-width: 346px;
-height: 64px;
+width: 21rem;
+height: 4rem;
 border-radius: 8px;
 padding: 0px, 20px, 16px, 20px;
-gap: 16px;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
@@ -108,9 +114,9 @@ font-size: 28px;
 }
 
 .card-header{
-width: 500px;
-height: 64px;
-padding-top: 10px ;
+width: 31rem;
+height: 10rem;
+padding-top:0;
 text-align: start;
 background: white;
 border: none;
@@ -171,17 +177,16 @@ cursor: pointer;
 }
 
 
-.div-caja-card{
-height: 100px;
-margin-top: 100px;
+.padre-carousel{
+  display: flex;
+flex-direction: column;
 }
-
 
 /*************************************************************************************************************/
 
 @media (max-width:1744px){
 .navbar-nav{
-width: 25%;
+width: 15%;
 padding-right: 40px;
 }
 
@@ -189,7 +194,7 @@ padding-right: 40px;
 
 @media (max-width:1363px){
 .navbar-nav{
-  width: 37%;
+  width: 50%;
   padding-right: 40px;
 }
   
@@ -198,10 +203,11 @@ padding-right: 40px;
 @media (max-width:1367px){
 .div-card{
   padding: auto;
-  margin-top: 15%;
+  margin-top: 20rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   height: 170vh;
 
 }
@@ -210,11 +216,11 @@ padding-right: 40px;
 
 @media (max-width:1368px){
 .div-caja-card{
-margin: 0;
-padding-top: 10%;
+  width: 600px;
 padding-bottom: 10%;
-margin-bottom: 10%;
+margin-bottom: 2rem;
 text-align: center;
+align-items: center;
 }
 }
 
@@ -247,12 +253,13 @@ text-align: center;
 @media (max-width:1368px) {
   .div-container-img{
     height: 100vh;
-    margin-top: 25%;
-margin-left: 0px;
-margin-right: 0%;
-  width: 60vh;
+    margin-top: 10rem;
+    margin-left: 6rem;
+
+  width:12rem;
     display: flex;
   flex-wrap: nowrap;
+   
   
 }
 
@@ -264,14 +271,41 @@ margin-right: 0%;
   flex-direction: column;
 }
 
+.arrows{
+  width: 5rem;
+  height: 100px;
+  margin-top: 24rem;
+}
+
+.img{
+  width: 12rem;
+  height: 12rem;
+}
+
+.card-header{
+  width: 30rem;
+  display: flex;
+  text-align: start;
+}
+
+.h1-popular{
+  font-size: 3rem;
+text-align: center;
+padding-left: 10rem;
 
 }
 
-.user-header{
-  width:  40px;
-  height: 40px;
+.padre-carousel{
+  display: flex;
+
 }
 
+
+}
+
+@media screen {
+  
+}
 
 
 

@@ -38,12 +38,12 @@ export default function Carousel({ data }) {
       <div className="div-container-img">
         {data.slice(counter, counterTo).map((each) => (
           <CardPolaroid
-            key={each.id}
-            src={each.photo}
-            alt={each.id}
-            text={each.city}
+          key={each.id}
+          src={each.photo}
+          alt={each.id}
+          text={each.city}
           />
-        ))}
+          ))}
       </div>
       <Arrow direction={"M8.25 4.5l7.5 7.5-7.5 7.5"} onClick={next_slice} />
     </div>
