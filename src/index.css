@@ -2,278 +2,425 @@
   box-sizing: border-box;
   margin: 0px;
 } */
+
 #root {
-  max-width: 1728px;
+  height: 99px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+  background: #bfbfcb;
 }
 
-
-/*   * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-*/
-/* body {
+body {
+  min-height: 99%;
+  width: 100px;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-}  */
-
-/* main{
-height: 100vh;
-} */
-
-.container{
-  width: 1,291px;
-  height: 64px;
-  top: 32px;
-  left: 219px;
+  background: #bfbfcb;
 }
 
-.navbar-nav{
-  width: 159px;
-  height: 64px;
-  font-size: 24px;
+.container {
+  width: 99vw;
+  height: 3rem;
+  margin-top: 21px;
+  align-items: center;
 }
 
-.navbar-brand{
-  margin-left: 20px;
-  font-size: 32px ;
+/****************************** header NavBar ********************************/
+
+.navbar {
+  margin-top: 0.4rem;
 }
 
-.svg-login{
-  padding: 80px;
+.navbar-nav {
+  width: 15rem;
+  height: 52px;
+  font-size: 1.5rem;
 }
 
-.login-h{
-  background: #4F46E5;
+.navbar-brand {
+  margin-top: 2px;
+  margin-left: 125px;
+  font-size: 30px;
+}
+
+.img-navbar {
+  width: 200px;
+  height: 95px;
+}
+
+.navbar-brand:hover {
+  transform: c;
+}
+
+.nav-link {
+  font-size: 21px;
+}
+
+.login-h {
+  width: 100%;
+  background: #4f46e5;
   display: flex;
   flex-direction: row;
-  
+  justify-content: center;
 }
 
-
-.div-card{
-width: 1291px;
-height: 304px;
-margin-top: 414px;
-left: 219px;
-display: flex;
-justify-content: space-around ;
-
+.login-h:hover {
+  background-color: #160bec;
+  border-radius: inherit;
+  transition: 0.5s;
+  transition: translate(2px, 2px);
 }
 
-.layout{
-
-width: 308px;
-height: 200px;
+/*Contenedor padre de la Card y del Carousel*/
+.div-card {
+  width: 99vw;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  height: 800px;
+  margin-top: 10rem;
 }
 
-.div-card{
-width: 100%;
-display: flex;
+/********************************************************** CARD ******************************************************/
+
+/*Contenedor padre de la card*/
+.div-caja-card {
+  height: 37rem;
+  margin: 0px;
+  display: flex;
 }
 
-.card{
-margin-left: 172px;
-width: 450px;
-border:none;
+/*Contenedor del título, texto y boton*/
+.card {
+  background: #bfbfcb;
+  margin-top: 1rem;
+  margin-left: 4em;
+  width: 500px;
+  height: 500px;
+  border: none;
+  justify-content: space;
 }
 
-.card-text{
-font-size: 18px;
-width: 800px;
-padding-right: 200px;
-height: 150px;
+/*titulo de la card*/
+.card-header {
+  align-items: end;
+  height: 2rem;
+  padding-top: 0;
+  text-align: start;
+  background: #bfbfcb;
+  border: none;
+  font-weight: bolder;
+  font-size: x-large;
 }
 
+/*Contenedor del texto y del boton*/
 
-.btn-view{
-background: #4F46E5;
-font-weight: 600;
-width: 346px;
-height: 64px;
-border-radius: 8px;
-padding: 0px, 20px, 16px, 20px;
-gap: 16px;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: center;
-font-size: 28px;
+.card-body {
+  margin-top: 3rem;
+  height: 50vh;
 }
 
-.card-header{
-width: 500px;
-height: 64px;
-padding-top: 10px ;
-text-align: start;
-background: white;
-border: none;
-font-weight: bolder;
-font-size: xx-large;
+/*texto de la card*/
+.card-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  width: 25rem;
 }
 
-.text-start{
-width: 170%;
+/*imagen de card*/
+.imagen-card {
+  width: 260px;
+  height: 180px;
+  margin-right: 50px;
+  border-radius: 15%;
 }
 
-.div-arrows{
-height: 650px;
-margin: 0px;
-padding: 0px;
-display: flex;
-flex-wrap: wrap;
-flex-direction: column;
-margin-right: 100px;
+.imagen-card:hover {
+  transition: 0.5s;
+  transform: scale(96%);
+  cursor: pointer;
 }
 
-.div-container-img{
-width: 790px;
-height: 550px;
-margin: 10px;
-margin-top: 0px;
-display: flex;
-flex-direction: column;
-flex-wrap: wrap;
-
+/*Boton View More*/
+.btn-view {
+  background: #4f46e5;
+  font-weight: 600;
+  width: 200px;
+  height: 4rem;
+  border-radius: 8px;
+  padding: 0px, 20px, 16px, 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  font-size: 28px;
+  margin-top: 50px;
+  margin-left: 110px;
 }
 
-.div-img{
-margin: auto;
-color: white;
+.btn-view:hover {
+  background-color: #160bec;
+  border-radius: inherit;
+  transition: 0.5s;
+  transition: translate(2px, 2px);
+  border-radius: 8px;
 }
 
-.img{
-width: 308px;
-height: 200px;
-border-radius: 10%;
-box-shadow: 3px 4px 10px 0 #000;
+/***************************************************************** CAROUSEL *******************************************************/
+
+/*Contenedor padre de carousel*/
+.padre-carousel {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 650px;
+  height: 756px;
 }
 
-.text-img{
-color: black;
-font-size: xx-large;
-
+/*Titulo del carousel*/
+.h1-popular {
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
+  margin-left: 2rem;
+  color: black;
+  margin-bottom: 1rem;
 }
 
-.arrows{
-margin-bottom: 60px;
-left: 35px;
-height: 100px;
-width: 5%;
-cursor: pointer;
-
+/*2do Contenedor de arrows y imagenes*/
+.div-arrows {
+  height: 550px;
+  margin: 0px;
+  padding: 0px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-
-.div-caja-card{
-height: 100px;
-margin-top: 100px;
+/*Flechas de carousel*/
+.arrows {
+  margin-bottom: 54px;
+  left: 35px;
+  height: 100px;
+  width: 5%;
+  cursor: pointer;
 }
 
+/*Contenedor de imagenes de carousel*/
+.div-container-img {
+  width: 400px;
+  height: 650px;
+  margin: 10px;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+/*contenedor de imagenes del carousel*/
+.div-img {
+  margin: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+/*imagen del carousel*/
+.img {
+  justify-content: space-between;
+  padding: 2px;
+  width: 200px;
+  height: 200px;
+  border-radius: 15%;
+  box-shadow: 3px 4px 10px 0 #000;
+}
+
+.img:hover {
+  transition: 0.5s;
+  transform: scale(95%);
+  cursor: pointer;
+}
+
+/*Texto del carousel*/
+.text-img {
+  color: black;
+  font-size: 20px;
+  padding-top: 5px;
+}
+
+/*************************************** Footer ***************************************/
+
+.padre-footer {
+  margin-top: auto;
+  background-color: #3a32cf;
+  width: 100%;
+  align-items: end;
+}
+
+.footer {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img-footer {
+  width: 10vh;
+}
+
+.anchor-footer {
+  text-decoration: none;
+  color: white;
+  margin: 1rem;
+  font-size: 17px;
+}
 
 /*************************************************************************************************************/
 
-@media (max-width:1744px){
-.navbar-nav{
-width: 25%;
-padding-right: 40px;
-}
-
-}
-
-@media (max-width:1363px){
-.navbar-nav{
-  width: 37%;
-  padding-right: 40px;
-}
-  
-}
-
-@media (max-width:1367px){
-.div-card{
-  padding: auto;
-  margin-top: 15%;
+/*Pagina de errores de ruta*/
+.not-found {
+  width: 99vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  margin-top: 10rem;
+  padding: 1rem;
+  border-radius: 0.5em;
+  font-size: 4.5rem;
+}
+
+.img-notfound {
   align-items: center;
-  height: 170vh;
-
 }
 
+.img-404 {
+  width: 90vw;
+  height: 70vh;
 }
 
-@media (max-width:1368px){
-.div-caja-card{
-margin: 0;
-padding-top: 10%;
-padding-bottom: 10%;
-margin-bottom: 10%;
-text-align: center;
-}
+@media screen and (min-width: 1209) {
+  .padre-footer {
+    margin-top: auto;
+    background-color: black;
+    width: 90%;
+    align-items: end;
+  }
 }
 
-/*************************************  Carousel Media query *****************************/
+@media screen and (max-width: 1210px) {
+  .container {
+    width: 900px;
+    margin-top: 21px;
+    align-items: center;
+  }
 
-/* @media (max-width:1368px){
-.caja-carusel{
-  border: solid black;
-  display: inline-block;
-  flex-direction: column;
+  .footer {
+    width: 100vw;
+  }
+
+  .padre-carousel {
+    display: flex;
+    flex-direction: wrap;
+  }
+
+  .div-card {
+    width: 100%;
+    height: 1500px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*Contenedor de imagenes de carousel*/
+  .div-container-img {
+    width: 400px;
+    height: 550px;
+    margin: 10px;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  /* 2do Contenedor de arrows y imagenes */
+  .div-arrows {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 800px;
+  }
+
+  /*contenedor de imagenes del carousel*/
+  .div-img {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    color: white;
+    flex-direction: column;
+  }
+
+  /*imagen del carousel*/
+  .img {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 15%;
+    box-shadow: 3px 4px 10px 0 #000;
+  }
 }
-} */
 
-@media  (max-width:1368px){
-.div-arrows{
-  
+@media screen and (max-width: 576px) {
+  .container {
+    width: 100vw;
+  }
+  .navbar {
+    margin-top: 0.2rem;
+  }
+
+  .navbar-nav {
+    width: 12rem;
+    height: 52px;
+    font-size: 1.5rem;
+  }
+
+  .navbar-brand {
+    margin-left: 20vw;
+    font-size: 25px;
+  }
+
+  .nav-link {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 715px) {
+  /* Título del carousel */
+  .h1-popular {
+    width: 90%;
+    font-size: 2rem;
+    text-align: center;
+    margin-left: 2rem;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+  }
+}
+
+/********************************* PAGINA CITIES *************************************/
+.main-cities {
+  display: flex;
+  background: #bfbfcb;
   width: 100vw;
   height: 100vh;
-  margin: 0px;
-  padding-top: 40%;
-  display: flex;
-  flex-wrap: wrap;
-
-  flex-direction: column;
-  margin-left: 20%;
-
-  
-} 
+  justify-content: center;
+  align-items: center;
 }
 
-@media (max-width:1368px) {
-  .div-container-img{
-    height: 100vh;
-    margin-top: 25%;
-margin-left: 0px;
-margin-right: 0%;
-  width: 60vh;
-    display: flex;
-  flex-wrap: nowrap;
-  
+.h1-cities {
+  font-size: 50px;
+  height: 300px;
+  color: rgb(82, 36, 166);
 }
-
-
-.user-header{
-  width:  40px;
-  height: 40px;
-  display: flex;
-  flex-direction: column;
-}
-
-
-}
-
-.user-header{
-  width:  40px;
-  height: 40px;
-}
-
-
-
-
-
