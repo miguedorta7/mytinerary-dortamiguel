@@ -1,13 +1,18 @@
-import NavBar from "../components/NavBar"
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
+import { Outlet } from "react-router-dom";
 
-
-export default function MainLayout({children}) {
+export default function MainLayout() {
   return (
-      <div>
-        <NavBar />
+    <div>
+      <NavBar />
 
-        {children}
+      <Outlet />
+
+      <div className="padre-footer">
+        <Footer />
 
       </div>
-  )
+    </div>
+  );
 }

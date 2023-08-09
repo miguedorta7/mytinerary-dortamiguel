@@ -2,311 +2,425 @@
   box-sizing: border-box;
   margin: 0px;
 } */
+
 #root {
-  max-width: 1728px;
+  height: 99px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+  background: #bfbfcb;
 }
 
-
-/*   * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-*/
-/* body {
+body {
+  min-height: 99%;
+  width: 100px;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-}  */
-
-/* main{
-height: 100vh;
-} */
-
-.container{
-  width: 1,291px;
-  height: 64px;
-  top: 32px;
-  left: 219px;
+  background: #bfbfcb;
 }
 
-.navbar-nav{
-  width: 159px;
-  height: 64px;
+.container {
+  width: 99vw;
+  height: 3rem;
+  margin-top: 21px;
+  align-items: center;
+}
+
+/****************************** header NavBar ********************************/
+
+.navbar {
+  margin-top: 0.4rem;
+}
+
+.navbar-nav {
+  width: 15rem;
+  height: 52px;
   font-size: 1.5rem;
 }
 
-.navbar-brand{
-  margin-left: 2rem;
-  font-size: 32px ;
+.navbar-brand {
+  margin-top: 2px;
+  margin-left: 125px;
+  font-size: 30px;
 }
 
-.svg-login{
-  padding: 80px;
+.img-navbar {
+  width: 200px;
+  height: 95px;
 }
 
-.user-header{
-  width:  40px;
-  height: 40px;
-
-  
+.navbar-brand:hover {
+  transform: c;
 }
 
+.nav-link {
+  font-size: 21px;
+}
 
-.login-h{
-  background: #4F46E5;
+.login-h {
+  width: 100%;
+  background: #4f46e5;
   display: flex;
   flex-direction: row;
-  
+  justify-content: center;
 }
 
-
-.div-card{
-width: 100vw;
-height: 100vh;
-margin-top: 20rem;
-
-
-
+.login-h:hover {
+  background-color: #160bec;
+  border-radius: inherit;
+  transition: 0.5s;
+  transition: translate(2px, 2px);
 }
 
-.layout{
-
-width: 308px;
-height: 200px;
-}
-
-/**************** Card ******************/
-.div-card{
-width: 100%;
-display: flex;
-}
-
-.card{
-margin-left: 172px;
-width: 500px;
-border:none;
-}
-
-.card-text{
-  font-size: 1.3rem;
-  width: 25rem;
- 
-}
-
-
-.btn-view{
-background: #4F46E5;
-font-weight: 600;
-width: 21rem;
-height: 4rem;
-border-radius: 8px;
-padding: 0px, 20px, 16px, 20px;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: center;
-font-size: 28px;
-}
-
-.card-header{
-width: 31rem;
-height: 10rem;
-padding-top:0;
-text-align: start;
-background: white;
-border: none;
-font-weight: bolder;
-font-size: xx-large;
-}
-
-.text-start{
-width: 170%;
-}
-
-.div-arrows{
-height: 650px;
-margin: 0px;
-padding: 0px;
-display: flex;
-flex-wrap: wrap;
-flex-direction: column;
-margin-right: 100px;
-}
-
-.div-container-img{
-width: 790px;
-height: 550px;
-margin: 10px;
-margin-top: 0px;
-display: flex;
-flex-direction: column;
-flex-wrap: wrap;
-
-}
-
-.div-img{
-margin: auto;
-color: white;
-}
-
-.img{
-width: 308px;
-height: 200px;
-border-radius: 10%;
-box-shadow: 3px 4px 10px 0 #000;
-}
-
-.text-img{
-color: black;
-font-size: xx-large;
-
-}
-
-.arrows{
-margin-bottom: 60px;
-left: 35px;
-height: 100px;
-width: 5%;
-cursor: pointer;
-
-}
-
-
-.padre-carousel{
+/*Contenedor padre de la Card y del Carousel*/
+.div-card {
+  width: 99vw;
   display: flex;
-flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  height: 800px;
+  margin-top: 10rem;
+}
+
+/********************************************************** CARD ******************************************************/
+
+/*Contenedor padre de la card*/
+.div-caja-card {
+  height: 37rem;
+  margin: 0px;
+  display: flex;
+}
+
+/*Contenedor del título, texto y boton*/
+.card {
+  background: #bfbfcb;
+  margin-top: 1rem;
+  margin-left: 4em;
+  width: 500px;
+  height: 500px;
+  border: none;
+  justify-content: space;
+}
+
+/*titulo de la card*/
+.card-header {
+  align-items: end;
+  height: 2rem;
+  padding-top: 0;
+  text-align: start;
+  background: #bfbfcb;
+  border: none;
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+/*Contenedor del texto y del boton*/
+
+.card-body {
+  margin-top: 3rem;
+  height: 50vh;
+}
+
+/*texto de la card*/
+.card-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  width: 25rem;
+}
+
+/*imagen de card*/
+.imagen-card {
+  width: 260px;
+  height: 180px;
+  margin-right: 50px;
+  border-radius: 15%;
+}
+
+.imagen-card:hover {
+  transition: 0.5s;
+  transform: scale(96%);
+  cursor: pointer;
+}
+
+/*Boton View More*/
+.btn-view {
+  background: #4f46e5;
+  font-weight: 600;
+  width: 200px;
+  height: 4rem;
+  border-radius: 8px;
+  padding: 0px, 20px, 16px, 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  font-size: 28px;
+  margin-top: 50px;
+  margin-left: 110px;
+}
+
+.btn-view:hover {
+  background-color: #160bec;
+  border-radius: inherit;
+  transition: 0.5s;
+  transition: translate(2px, 2px);
+  border-radius: 8px;
+}
+
+/***************************************************************** CAROUSEL *******************************************************/
+
+/*Contenedor padre de carousel*/
+.padre-carousel {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 650px;
+  height: 756px;
+}
+
+/*Titulo del carousel*/
+.h1-popular {
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
+  margin-left: 2rem;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+/*2do Contenedor de arrows y imagenes*/
+.div-arrows {
+  height: 550px;
+  margin: 0px;
+  padding: 0px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/*Flechas de carousel*/
+.arrows {
+  margin-bottom: 54px;
+  left: 35px;
+  height: 100px;
+  width: 5%;
+  cursor: pointer;
+}
+
+/*Contenedor de imagenes de carousel*/
+.div-container-img {
+  width: 400px;
+  height: 650px;
+  margin: 10px;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+/*contenedor de imagenes del carousel*/
+.div-img {
+  margin: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+/*imagen del carousel*/
+.img {
+  justify-content: space-between;
+  padding: 2px;
+  width: 200px;
+  height: 200px;
+  border-radius: 15%;
+  box-shadow: 3px 4px 10px 0 #000;
+}
+
+.img:hover {
+  transition: 0.5s;
+  transform: scale(95%);
+  cursor: pointer;
+}
+
+/*Texto del carousel*/
+.text-img {
+  color: black;
+  font-size: 20px;
+  padding-top: 5px;
+}
+
+/*************************************** Footer ***************************************/
+
+.padre-footer {
+  margin-top: auto;
+  background-color: #3a32cf;
+  width: 100%;
+  align-items: end;
+}
+
+.footer {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img-footer {
+  width: 10vh;
+}
+
+.anchor-footer {
+  text-decoration: none;
+  color: white;
+  margin: 1rem;
+  font-size: 17px;
 }
 
 /*************************************************************************************************************/
 
-@media (max-width:1744px){
-.navbar-nav{
-width: 15%;
-padding-right: 40px;
-}
-
-}
-
-@media (max-width:1363px){
-.navbar-nav{
-  width: 50%;
-  padding-right: 40px;
-}
-  
-}
-
-@media (max-width:1367px){
-.div-card{
-  padding: auto;
-  margin-top: 20rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 170vh;
-
-}
-
-}
-
-@media (max-width:1368px){
-.div-caja-card{
-  width: 600px;
-padding-bottom: 10%;
-margin-bottom: 2rem;
-text-align: center;
-align-items: center;
-}
-}
-
-/*************************************  Carousel Media query *****************************/
-
-/* @media (max-width:1368px){
-.caja-carusel{
-  border: solid black;
-  display: inline-block;
-  flex-direction: column;
-}
-} */
-
-@media  (max-width:1368px){
-.div-arrows{
-  
-  width: 90vw;
+/*Pagina de errores de ruta*/
+.not-found {
+  width: 99vw;
   height: 100vh;
-  padding-top: 40%;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  margin-left: 5%;
-  margin-right: 5%;
-
-  
-} 
+  margin-top: 10rem;
+  padding: 1rem;
+  border-radius: 0.5em;
+  font-size: 4.5rem;
 }
 
-@media (max-width:1368px) {
-  .div-container-img{
-    height: 100vh;
-    margin-top: 10rem;
-    margin-left: 6rem;
+.img-notfound {
+  align-items: center;
+}
 
-  width:12rem;
+.img-404 {
+  width: 90vw;
+  height: 70vh;
+}
+
+@media screen and (min-width: 1209) {
+  .padre-footer {
+    margin-top: auto;
+    background-color: black;
+    width: 90%;
+    align-items: end;
+  }
+}
+
+@media screen and (max-width: 1210px) {
+  .container {
+    width: 900px;
+    margin-top: 21px;
+    align-items: center;
+  }
+
+  .footer {
+    width: 100vw;
+  }
+
+  .padre-carousel {
     display: flex;
-  flex-wrap: nowrap;
-   
-  
+    flex-direction: wrap;
+  }
+
+  .div-card {
+    width: 100%;
+    height: 1500px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*Contenedor de imagenes de carousel*/
+  .div-container-img {
+    width: 400px;
+    height: 550px;
+    margin: 10px;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  /* 2do Contenedor de arrows y imagenes */
+  .div-arrows {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 800px;
+  }
+
+  /*contenedor de imagenes del carousel*/
+  .div-img {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    color: white;
+    flex-direction: column;
+  }
+
+  /*imagen del carousel*/
+  .img {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 15%;
+    box-shadow: 3px 4px 10px 0 #000;
+  }
 }
 
+@media screen and (max-width: 576px) {
+  .container {
+    width: 100vw;
+  }
+  .navbar {
+    margin-top: 0.2rem;
+  }
 
-.user-header{
-  width:  40px;
-  height: 40px;
+  .navbar-nav {
+    width: 12rem;
+    height: 52px;
+    font-size: 1.5rem;
+  }
+
+  .navbar-brand {
+    margin-left: 20vw;
+    font-size: 25px;
+  }
+
+  .nav-link {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 715px) {
+  /* Título del carousel */
+  .h1-popular {
+    width: 90%;
+    font-size: 2rem;
+    text-align: center;
+    margin-left: 2rem;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+  }
+}
+
+/********************************* PAGINA CITIES *************************************/
+.main-cities {
   display: flex;
-  flex-direction: column;
+  background: #bfbfcb;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
-.arrows{
-  width: 5rem;
-  height: 100px;
-  margin-top: 24rem;
+.h1-cities {
+  font-size: 50px;
+  height: 300px;
+  color: rgb(82, 36, 166);
 }
-
-.img{
-  width: 12rem;
-  height: 12rem;
-}
-
-.card-header{
-  width: 30rem;
-  display: flex;
-  text-align: start;
-}
-
-.h1-popular{
-  font-size: 3rem;
-text-align: center;
-padding-left: 10rem;
-
-}
-
-.padre-carousel{
-  display: flex;
-
-}
-
-
-}
-
-@media screen {
-  
-}
-
-
-
-

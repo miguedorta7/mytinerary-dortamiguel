@@ -1,5 +1,6 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { Link as Anchor } from "react-router-dom";
 
 export default function CardPage() {
   return (
@@ -11,7 +12,12 @@ export default function CardPage() {
       interfase and a host of itinerary options, planning your next trip has
       never been easier.
     </Card.Text>
-    <Button variant="primary" className="btn-view d-flex align-items-stretch">
+    <div className='container-img-card'>
+
+
+    <img className='imagen-card' src="public\img\backgroundLog.jpg" alt="" />
+    </div>
+    <Button  variant="primary" className="btn-view d-flex align-items-stretch" as={Anchor} to={"/cities"}>
       View More
     </Button>
   </Card.Body>
