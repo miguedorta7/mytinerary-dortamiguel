@@ -15,7 +15,7 @@ export default function CardPage() {
     <div className='container-img-card'>
 
 
-    <img className='imagen-card' src="public\img\backgroundLog.jpg" alt="" />
+    <img className='imagen-card' src="/img/backgroundLog.jpg" alt="" />
     </div>
     <Button  variant="primary" className="btn-view d-flex align-items-stretch" as={Anchor} to={"/cities"}>
       View More
