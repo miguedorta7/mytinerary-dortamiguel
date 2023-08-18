@@ -3,7 +3,9 @@
   margin: 0px;
 } */
 
+
 #root {
+  height: 99px;
   height: 99px;
   margin: 0 auto;
   text-align: center;
@@ -11,11 +13,16 @@
 }
 
 * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  min-height: 99%;
+  width: 100px;
+  overflow-x: hidden;
 body {
   min-height: 99%;
   width: 100px;
@@ -147,6 +154,10 @@ body {
   transition: 0.5s;
   transform: scale(96%);
   cursor: pointer;
+.imagen-card:hover {
+  transition: 0.5s;
+  transform: scale(96%);
+  cursor: pointer;
 }
 
 /*Boton View More*/
@@ -171,8 +182,39 @@ body {
   transition: 0.5s;
   transition: translate(2px, 2px);
   border-radius: 8px;
+/*Boton View More*/
+.btn-view {
+  background: #4f46e5;
+  font-weight: 600;
+  width: 200px;
+  height: 4rem;
+  border-radius: 8px;
+  padding: 0px, 20px, 16px, 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  font-size: 28px;
+  margin-top: 50px;
+  margin-left: 110px;
 }
 
+.btn-view:hover {
+  background-color: #160bec;
+  border-radius: inherit;
+  transition: 0.5s;
+  transition: translate(2px, 2px);
+  border-radius: 8px;
+}
+
+/***************************************************************** CAROUSEL *******************************************************/
+
+/*Contenedor padre de carousel*/
+.padre-carousel {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 650px;
+  height: 756px;
 /***************************************************************** CAROUSEL *******************************************************/
 
 /*Contenedor padre de carousel*/
@@ -412,7 +454,6 @@ body {
 /********************************* PAGINA CITIES *************************************/
 .main-cities {
   display: flex;
-
   width: 100vw;
   height: 100vh;
   justify-content: center;
@@ -423,4 +464,9 @@ body {
   font-size: 50px;
   height: 300px;
   color: rgb(82, 36, 166);
+}
+}
+}
+}
+}
 }

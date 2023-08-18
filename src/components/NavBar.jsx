@@ -15,7 +15,11 @@ export default function NavBar() {
       <Navbar expand="lg" className="fw-bold">
         <Container>
           
+<<<<<<< HEAD
           <Navbar.Brand href="#home"><img className="img-navbar" src="/public/img/logo-my-tinerary.png" alt="" /></Navbar.Brand>
+=======
+          <Navbar.Brand href="#home"><img className="img-navbar" src="/img/logo-my-tinerary.png" alt="" /></Navbar.Brand>
+>>>>>>> main
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
