@@ -7,7 +7,7 @@
   height: 99px;
   margin: 0 auto;
   text-align: center;
-  background: #bfbfcb;
+
 }
 
 * {
@@ -22,7 +22,7 @@ body {
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  background: #bfbfcb;
+  
 }
 
 .container {
@@ -99,7 +99,7 @@ body {
 
 /*Contenedor del título, texto y boton*/
 .card {
-  background: #bfbfcb;
+ 
   margin-top: 1rem;
   margin-left: 4em;
   width: 500px;
@@ -114,10 +114,10 @@ body {
   height: 2rem;
   padding-top: 0;
   text-align: start;
-  background: #bfbfcb;
   border: none;
   font-weight: bolder;
   font-size: x-large;
+  background: white;
 }
 
 /*Contenedor del texto y del boton*/
@@ -412,7 +412,7 @@ body {
 /********************************* PAGINA CITIES *************************************/
 .main-cities {
   display: flex;
-  background: #bfbfcb;
+
   width: 100vw;
   height: 100vh;
   justify-content: center;
