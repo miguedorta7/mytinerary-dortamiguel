@@ -3,6 +3,7 @@ import CardPage from "../components/CardPage";
 import Carousel from "../components/Carousel";
 import axios from "axios";
 
+
 export default function HomePage() {
   const [data, setData] = useState([]);
 
@@ -30,6 +31,7 @@ export default function HomePage() {
           <Carousel data={data} />
         </div>
       </div>
+
     </main>
   );
 }

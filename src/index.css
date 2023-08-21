@@ -7,7 +7,7 @@
   height: 99px;
   margin: 0 auto;
   text-align: center;
-  background: #bfbfcb;
+  
 }
 
 * {
@@ -22,7 +22,8 @@ body {
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  background: #bfbfcb;
+  
+  
 }
 
 .container {
@@ -52,7 +53,7 @@ body {
 
 .img-navbar {
   width: 200px;
-  height: 95px;
+  height: 70px;
 }
 
 .navbar-brand:hover {
@@ -99,7 +100,6 @@ body {
 
 /*Contenedor del título, texto y boton*/
 .card {
-  background: #bfbfcb;
   margin-top: 1rem;
   margin-left: 4em;
   width: 500px;
@@ -114,10 +114,10 @@ body {
   height: 2rem;
   padding-top: 0;
   text-align: start;
-  background: #bfbfcb;
   border: none;
   font-weight: bolder;
   font-size: x-large;
+  background: white;
 }
 
 /*Contenedor del texto y del boton*/
@@ -409,18 +409,245 @@ body {
   }
 }
 
-/********************************* PAGINA CITIES *************************************/
+/*************************************************** PAGINA CITIES *************************************/
 .main-cities {
   display: flex;
-  background: #bfbfcb;
   width: 100vw;
-  height: 100vh;
+  height: 120vh;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
-.h1-cities {
-  font-size: 50px;
-  height: 300px;
-  color: rgb(82, 36, 166);
+
+.container-cities{
+
+  margin-top: 170px;
+  position: relative;
+  bottom: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 20px;
+  
+
 }
+
+
+/**************************************************** IMAGEN CITIES ************************************************************/
+
+
+#fondo-cities{
+  width: 100vw;
+  height: 350px;
+  background-image:url(img/index.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 70%;
+}
+
+
+
+.h1-cities{
+  height: 100px;
+  margin-top: 190px;
+  font-size: 50px;
+  color: rgb(10, 6, 6);
+ 
+}
+
+.p-cities{
+  font-size:30px;
+  align-items: center;
+  color: black;
+
+}
+
+
+/**************************************SEARCH*****************************/
+
+
+.search-cities{
+  flex-direction: column;
+  position: relative;
+  top: 80px;
+ }
+
+ 
+ #buttonAccess{
+   background: #4f46e5;
+   border: none;
+   color: white;
+  }
+  
+  #buttonAccess:hover {
+    background-color: #160bec;
+    transition: 0.5s;
+    transition: translate(2px, 2px);
+  }
+  
+
+
+
+
+/*************************************CARDS*********************************/
+
+  
+  .cards-cities{
+    position: relative;
+   display: flex;
+   flex-wrap: wrap;
+   top: 130px;
+  }
+  
+
+ .card-city{
+    
+    height:305px;
+    border-radius: 3%;
+    box-shadow: 3px 3px 10px 0 #4f46e5;
+    margin-top: 60px;
+   
+  } 
+
+  .card-imagen{
+ 
+    height: 135vh;
+  }
+  
+   .cardbody-city{
+    margin: 0;
+    padding: 0;
+    
+  }
+
+  .btn-card{
+    background-color: #4f46e5;
+    border: none;
+    
+  }
+  .btn-card:hover {
+    background-color: #160bec;
+    transition: 0.5s;
+    transition: translate(2px, 2px);
+  }
+ 
+
+
+
+
+
+  /****************************************MEDIAS********************************/
+
+@media screen and (max-width:1408px){
+  .main-cities {
+    display: flex;
+    width: 100vw;
+    height: 160vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .container-cities{
+    position: relative;
+    bottom: 122px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 20px;
+  
+  }
+}
+
+@media screen and (max-width:1285px){
+
+
+  .main-cities {
+    display: flex;
+    width: 100vw;
+    height: 180vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .container-cities{
+    position: relative;
+    bottom: 122px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 20px;
+  
+  }
+}
+
+
+
+  @media screen and (max-width: 991px) {
+    .container-cities{
+      position: relative;
+      bottom: -15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 20px;
+    
+    }
+    .search-cities{
+      flex-direction: column;
+      margin-top: 210px;
+     }
+    }
+
+
+    @media screen and (max-width:991px){
+      .main-cities {
+        display: flex;
+        width: 100vw;
+        height: 210vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .container-cities{
+        position: relative;
+        bottom: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 20px;
+  
+      }
+      .search-cities{
+        flex-direction: column;
+        top: 10px;
+    
+       }
+    }
+
+
+
+    @media screen and (max-width:704px){
+      .main-cities {
+        display: flex;
+        width: 100vw;
+        height: 300vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .cards-cities{
+        position: relative;
+       display: flex;
+       flex-wrap: wrap;
+       top: 130px;
+       justify-content: center;
+       right: 20px;
+    
+      }
+    }

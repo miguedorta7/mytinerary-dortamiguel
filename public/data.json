@@ -1,4 +1,4 @@
-[
+ [
     { "id": "am1", "city": "Cancun", "photo": "/img/america/cancun.jpg" },
     { "id": "am2", "city": "New York", "photo": "/img/america/newyork.jpg" },
     { "id": "am3", "city": "Rio de Janeiro", "photo": "/img/america/rioDeJaneiro.jpg"},
@@ -15,4 +15,4 @@
     { "id": "oc2", "city": "Sidney", "photo": "/img/oceania/sidney.jpg" },
     { "id": "oc3", "city": "Suva", "photo": "/img/oceania/suva.jpg" },
     { "id": "oc4", "city": "Wellington", "photo": "/img/oceania/wellington.jpg" }
-]
+] 
