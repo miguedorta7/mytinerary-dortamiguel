@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import CardPage from "../components/CardPage";
 import Carousel from "../components/Carousel";
 import axios from "axios";
+import apiUrl from "../apiUrl";
 
 
 export default function HomePage() {
@@ -9,8 +10,9 @@ export default function HomePage() {
 
   useEffect(
     () => {
-      axios("/data.json")
-        .then((resp) => setData(resp.data))
+      axios(apiUrl+'cities/carousel')
+        //.then((resp) => console.log(resp.data.data_carousel))
+        .then((resp) => setData(resp.data.data_carousel))
         .catch((err) => console.log(err));
     },
     //callback que no debe retornar nada y no puede ser asincrona
@@ -31,7 +33,6 @@ export default function HomePage() {
           <Carousel data={data} />
         </div>
       </div>
-
     </main>
   );
 }

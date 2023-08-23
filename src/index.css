@@ -413,7 +413,7 @@ body {
 .main-cities {
   display: flex;
   width: 100vw;
-  height: 120vh;
+  height: 130rem;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -440,7 +440,7 @@ body {
 
 #fondo-cities{
   width: 100vw;
-  height: 350px;
+  height: 300px;
   background-image:url(img/index.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -471,22 +471,16 @@ body {
 .search-cities{
   flex-direction: column;
   position: relative;
-  top: 80px;
+  top: 100px;
  }
 
  
- #buttonAccess{
-   background: #4f46e5;
-   border: none;
-   color: white;
-  }
   
-  #buttonAccess:hover {
-    background-color: #160bec;
-    transition: 0.5s;
-    transition: translate(2px, 2px);
+  .text-error{
+    font-size: large;
   }
-  
+ 
+
 
 
 
@@ -532,7 +526,8 @@ body {
     transition: 0.5s;
     transition: translate(2px, 2px);
   }
- 
+
+
 
 
 
@@ -544,14 +539,14 @@ body {
   .main-cities {
     display: flex;
     width: 100vw;
-    height: 160vh;
+    height: 283vh;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
   .container-cities{
     position: relative;
-    bottom: 122px;
+    bottom: 105px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -567,14 +562,32 @@ body {
   .main-cities {
     display: flex;
     width: 100vw;
-    height: 180vh;
+    height: 290vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .container-cities{
+    bottom: 13vh;
+    height: 20px;
+  
+  }
+}
+
+@media screen and (max-width:1056px){
+
+
+  .main-cities {
+    display: flex;
+    width: 100vw;
+    height: 420vh;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
   .container-cities{
     position: relative;
-    bottom: 122px;
+    bottom: 130px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -586,36 +599,19 @@ body {
 
 
 
-  @media screen and (max-width: 991px) {
-    .container-cities{
-      position: relative;
-      bottom: -15px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      height: 20px;
-    
-    }
-    .search-cities{
-      flex-direction: column;
-      margin-top: 210px;
-     }
-    }
-
 
     @media screen and (max-width:991px){
       .main-cities {
         display: flex;
         width: 100vw;
-        height: 210vh;
+        height: 428vh;
         justify-content: center;
         align-items: center;
         flex-direction: column;
       }
       .container-cities{
         position: relative;
-        bottom: 55px;
+        bottom: 100px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -625,8 +621,13 @@ body {
       }
       .search-cities{
         flex-direction: column;
-        top: 10px;
+        top: 130px;
     
+       }
+       .search-cities{
+        flex-direction: column;
+        position: relative;
+        top: 170px;
        }
     }
 
@@ -636,11 +637,23 @@ body {
       .main-cities {
         display: flex;
         width: 100vw;
-        height: 300vh;
+        height: 750vh;
         justify-content: center;
         align-items: center;
         flex-direction: column;
       }
+      .container-cities{
+        position: relative;
+        bottom: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 20px;
+  
+      }
+
+
       .cards-cities{
         position: relative;
        display: flex;
@@ -650,4 +663,81 @@ body {
        right: 20px;
     
       }
+      .h1-cities{
+        height: 100px;
+        margin-top: 190px;
+        font-size: 50px;
+        color: rgb(10, 6, 6);
+       
+      }
+      
+      .p-cities{
+        font-size:20px;
+        align-items: center;
+        color: black;
+        bottom: 100px;
+      }
     }
+
+
+    /********************************************************CITY DETAILS ***************************************/
+
+
+     .main-citydetails{
+       display: flex;
+       width: 100vw;
+       height: 100vh;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       
+      }
+
+      #buttonAccess{
+        background-color: #3a32cf;
+        color: white;
+        border: none;
+    
+      }
+s
+      #buttonAccess:hover {
+        background-color: #160bec;
+        border-radius: inherit;
+        transition: 0.5s;
+        transition: translate(2px, 2px);
+        border-radius: 8px;
+      }
+
+      .city-details{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        height: 100px;
+      }
+      
+
+      .container-img-details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+;
+      }
+      
+      .img-details{
+      max-width: 70vw;
+      max-height: 80vh;
+      width: 60vw;
+      height: 60vh;
+     }
+
+     .p-city{
+      margin: 10px;
+      padding-left: 20px;
+      padding-right: 50px;
+     }
+
+     .p-title{
+      font-weight: bold;
+      font-size: 25px;
+     }

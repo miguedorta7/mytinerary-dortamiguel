@@ -17,7 +17,7 @@ export default function CardPage() {
 
     <img className='imagen-card' src="/img/backgroundLog.jpg" alt="" />
     </div>
-    <Button  variant="primary" className="btn-view d-flex align-items-stretch" as={Anchor} to={"/cities"}>
+    <Button  variant="primary" className="btn-view d-flex align-items-stretch" as={Anchor} to={"/city"}>
       View More
     </Button>
   </Card.Body>
