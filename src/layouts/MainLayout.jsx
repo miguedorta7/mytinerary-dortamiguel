@@ -11,7 +11,6 @@ export default function MainLayout() {
 
       <div className="padre-footer">
         <Footer />
-
       </div>
     </div>
   );
