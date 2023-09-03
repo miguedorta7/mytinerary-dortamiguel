@@ -2,30 +2,20 @@ import "../index.css";
 import BannerCities from "../components/BannerCities";
 import CardCities from "../components/CardCities";
 import { useEffect, useState, useRef } from "react";
-import axios from "axios";
-import apiUrl from "../apiUrl";
+
+import { useSelector, useDispatch } from "react-redux";
+import city_actions from "../store/actions/cities";
+const { read_cities } = city_actions;
 
 export default function Cities() {
-  const [data, setData] = useState([]);
+  const cities = useSelector((store) => store.cities.cities);
   const [reEffect, setReEffect] = useState(true);
   const text = useRef();
+  const dispatch = useDispatch();
+  console.log(cities);
 
   useEffect(() => {
-    try {
-      axios(apiUrl + "cities?city=" + text.current.value)
-        .then((res) => setData(res.data.response))
-        .catch((err) => {
-          if (err.response && err.response.status === 404) {
-            // Cuando el servidor responde con un 404, muestra el mensaje personalizado
-            setData([]);
-          } else {
-            // Si hay otro tipo de error, puedes manejarlo aquí
-            console.error(err);
-          }
-        });
-    } catch (error) {
-      console.error(error);
-    }
+    dispatch(read_cities({ text: text.current?.value }));
   }, [reEffect]);
 
   function handleFilter() {
@@ -38,7 +28,9 @@ export default function Cities() {
   return (
     <main className="main-cities">
       <div className="container-cities">
-        <BannerCities />
+        <div>
+          <BannerCities />
+        </div>
         <div className="search-cities">
           <form
             id="buscador-opciones"
@@ -58,27 +50,31 @@ export default function Cities() {
               aria-label="Search"
               onKeyUp={handleFilter}
             />
-            {/* <button id="buttonAccess" 
-              className="btn btn-outline-primary" type="submit"> Search <i className="bi bi-search"></i>
-              </button> */}
           </form>
         </div>
+        <div>
+          {cities.length === 0 ? (
+            <div className="text-error">
+              <div>
+              <img className="img-notfound" src="/img/alertNoftfound.png" alt="Not found" />
+              </div>
+              Not found city, please type another!
+            </div>
+          ) : (
+            <div className="cards-container-cities">
+              {cities.map((each) => (
+                <CardCities
+                  key={each._id}
+                  src={each.photo}
+                  alt={each._id}
+                  text={each.city}
+                  cityId={each._id}
+                />
+              ))}
+            </div>
+          )}
+        </div>
 
-        {data.length === 0 ? (
-          <div className="text-error">Not found city, please type another</div>
-        ) : (
-          <div className="cards-cities">
-            {data.map((each) => (
-              <CardCities
-                key={each._id}
-                src={each.photo}
-                alt={each._id}
-                text={each.city}
-                migue={each._id}
-              />
-            ))}
-          </div>
-        )}
       </div>
     </main>
   );

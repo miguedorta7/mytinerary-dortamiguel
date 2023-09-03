@@ -33,18 +33,22 @@ export default function Carousel({ data }) {
   }
   
   return (
-    <div className="div-arrows d-flex justify-content-center">
+    <div className="div-container-carousel d-flex justify-content-center">
       <Arrow direction={"M15.75 19.5L8.25 12l7.5-7.5"} onClick={prev_slice}/>
-      <div className="div-container-imagen">
-        {data.slice(counter, counterTo).map((each) => (
+
+      <div id="div-containerImagen">
+        <div className="div-card-carousel">
+          {data.slice(counter, counterTo).map((each) => (
+
           <CardPolaroid
-          key={each.id}
+          key={each._id}
           src={each.photo}
-          alt={each.id}
+          alt={each._id}
           text={each.city}
-          id = {each.id}
+          id = {each._id}
           />
           ))}
+        </div>
       </div>
       <Arrow direction={"M8.25 4.5l7.5 7.5-7.5 7.5"} onClick={next_slice} />
     </div>

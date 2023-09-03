@@ -1,19 +1,34 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import CardPage from "../components/CardPage";
 import Carousel from "../components/Carousel";
-import axios from "axios";
-import apiUrl from "../apiUrl";
+
+/* import axios from "axios";
+import apiUrl from "../apiUrl"; */
+import { useSelector,useDispatch } from "react-redux";
+import city_actions from "../store/actions/cities";
+const {read_carousel} = city_actions
 
 
 export default function HomePage() {
-  const [data, setData] = useState([]);
+
+  //const store = useSelector(store=>store)
+  //console.log(store)
+  //const city_reducer = useSelector(store=>store.cities)
+  //console.log(city_reducer)
+  const carousel = useSelector(store=>store.cities.carousel)
+  console.log(carousel)
+  const dispatch = useDispatch()
 
   useEffect(
     () => {
-      axios(apiUrl+'cities/carousel')
-        //.then((resp) => console.log(resp.data.data_carousel))
-        .then((resp) => setData(resp.data.data_carousel))
-        .catch((err) => console.log(err));
+
+      if(carousel.length === 0){
+        dispatch(
+          read_carousel())
+
+      }
+      
+
     },
     //callback que no debe retornar nada y no puede ser asincrona
     [] //array de dependencias
@@ -23,14 +38,14 @@ export default function HomePage() {
   );
 
   return (
-    <main>
+    <main className="main-home">
       <div className="div-card alig-items-center justify-content-center ">
         <div className="div-caja-card">
           <CardPage />
         </div>
         <div className="padre-carousel">
           <h1 className="h1-popular">Popular Mytineraries!</h1>
-          <Carousel data={data} />
+          <Carousel data={carousel} />
         </div>
       </div>
     </main>

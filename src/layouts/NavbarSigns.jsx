@@ -1,12 +1,16 @@
 import Footer from "../components/Footer";
 import { Outlet } from "react-router-dom";
-import NavbarWhite from "../components/NavbarWhite";
+
+import NavBar from "../components/NavBar";
+
 
 export default function NavbarSigns() {
   return (
     <div>
         <div className="father-page-sign">
-        <NavbarWhite />
+
+        <NavBar />
+
         <Outlet />
         </div>
         
