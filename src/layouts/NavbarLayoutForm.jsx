@@ -1,4 +1,4 @@
-import NavbarWhite from "../components/NavbarWhite";
+import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import { Outlet } from "react-router-dom";
 
@@ -6,7 +6,7 @@ export default function NavbarLayout() {
   return (
     <div>
         <div className="father-page">
-        <NavbarWhite />
+        <NavBar />
         <Outlet />
         </div>
 
