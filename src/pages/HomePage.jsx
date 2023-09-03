@@ -1,11 +1,13 @@
 import { useEffect } from "react";
 import CardPage from "../components/CardPage";
 import Carousel from "../components/Carousel";
+
 /* import axios from "axios";
 import apiUrl from "../apiUrl"; */
 import { useSelector,useDispatch } from "react-redux";
 import city_actions from "../store/actions/cities";
 const {read_carousel} = city_actions
+
 
 export default function HomePage() {
 
@@ -19,12 +21,14 @@ export default function HomePage() {
 
   useEffect(
     () => {
+
       if(carousel.length === 0){
         dispatch(
           read_carousel())
 
       }
       
+
     },
     //callback que no debe retornar nada y no puede ser asincrona
     [] //array de dependencias

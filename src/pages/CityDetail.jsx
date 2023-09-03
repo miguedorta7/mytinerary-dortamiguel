@@ -1,4 +1,5 @@
 
+
 import { Link as Anchor } from "react-router-dom";
 import CardsItineraries from "../components/CardsItineraries";
 import CardCityDetail from "../components/CardCityDetail";
@@ -18,6 +19,7 @@ export default function CityDetail() {
             </Anchor>
           </div>
         </div>
+
       </main>
     </div>
   );
