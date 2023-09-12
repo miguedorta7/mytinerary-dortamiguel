@@ -2,12 +2,14 @@ import "../index.css";
 import BannerCities from "../components/BannerCities";
 import CardCities from "../components/CardCities";
 import { useEffect, useState, useRef } from "react";
+
 import { useSelector, useDispatch } from "react-redux";
 import city_actions from "../store/actions/cities";
 const { read_cities } = city_actions;
 
 export default function Cities() {
   const cities = useSelector((store) => store.cities.cities);
+
   const [reEffect, setReEffect] = useState([true]);
   const text = useRef();
   const dispatch = useDispatch();
@@ -74,6 +76,7 @@ export default function Cities() {
             </div>
           )}
         </div>
+
       </div>
     </main>
   );

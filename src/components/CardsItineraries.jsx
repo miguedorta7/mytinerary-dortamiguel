@@ -1,10 +1,13 @@
+
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 import LikeButton from "../components/ButtonLike";
+
 import { useSelector, useDispatch } from "react-redux";
 import { useEffect } from "react";
 import itineraries_actions from "../store/actions/itineraries";
 import { useParams } from "react-router-dom";
+
 import Activities from "../components/Activities";
 
 const { read_itineraries_from_city } = itineraries_actions;
@@ -81,9 +84,11 @@ export default function CardsItineraries() {
   const { _id } = useParams();
   const itineraries = useSelector((store) => store.itineraries.itineraries_from_city);
 
+
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(read_itineraries_from_city(_id));
+
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -103,6 +108,7 @@ export default function CardsItineraries() {
           ))}
         </div>
       )}
+
     </div>
   );
 }

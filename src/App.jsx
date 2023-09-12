@@ -6,6 +6,7 @@ import HomePage from "./pages/HomePage";
 import Footer from "./components/Footer"; */
 import { RouterProvider } from "react-router-dom";
 import router from "./router";
+
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 import user_actions from "./store/actions/users";
@@ -21,6 +22,7 @@ function App() {
   }, []);
 
   return <RouterProvider router={router} />;
+
 }
 
 export default App;

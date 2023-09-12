@@ -7,6 +7,7 @@
  
   margin: 0 auto;
   text-align: center;
+
 }
 
 * {
@@ -26,6 +27,7 @@ body {
 
 
 
+
 /****************************** *************************header NavBar **************************************************/
 /**********Barra de navegacion********/
 
@@ -34,20 +36,26 @@ body {
   min-height: 70px;;
 }
 
+
 .navbar{
   display: grid;
   background: linear-gradient(90deg, #7181cc, rgb(90, 122, 183));
   border-radius: 2px;
+
   padding-left: 90px;
+
   
 } 
 
 .container {
+
   width: 80vw;
+
   height: 3rem;
   margin-top: 10px;
   align-items: start;
   text-align: center;
+
   margin-left: -100px;
   
 }
@@ -61,6 +69,7 @@ body {
   height: 59px;
   font-size: 1.5rem;
   align-items: center;
+
 }
 
 .home-navbar{
@@ -70,6 +79,7 @@ body {
 .navbar-brand {
   margin-top: 2px;
   margin-left: 225px;
+
   font-size: 27px;
   color: white;
 }
@@ -77,6 +87,19 @@ body {
 .navbar-collapse{
   padding-left: 10px;
 }
+
+
+
+/* 
+/******logo Navbar*/
+.img-navbar-title{
+  width: 50px;
+  height: 50px;
+  margin-right: 25px;
+} */
+
+
+
 
 
 
@@ -114,6 +137,7 @@ body {
   text-align: center;
   width: 115px;
 }
+
 
 
 
@@ -190,8 +214,10 @@ body {
   width: 130vw;
   max-width: 150vw;
   height: 150vh;
+
   display: flex;
 }
+
 
 
 
@@ -208,9 +234,12 @@ padding-top: 40px;
 
 
 
+
 /*Contenedor padre de la card*/
 .div-caja-card {
   height: 37rem;
+
+
   display: flex;
   justify-content: space-between;
 }
@@ -223,7 +252,9 @@ padding-top: 40px;
   border: none;
   background: none;
   font-weight: bold;
+
   color:#ffffff
+
 }
 
 /*titulo de la card*/
@@ -234,9 +265,11 @@ padding-top: 40px;
   text-align: start;
   border: none;
   font-size: x-large;
+
   background: none;
   text-align: center;
  
+
 }
 
 /*Contenedor del texto y del boton*/
@@ -264,6 +297,8 @@ padding-top: 40px;
 }
 
 
+
+
 /*Boton View More*/
 .btn-view {
   background: #4f46e5;
@@ -287,6 +322,7 @@ padding-top: 40px;
   transition: translate(2px, 2px);
   border-radius: 8px;
 }
+
 
 
 
@@ -371,7 +407,9 @@ padding-top: 40px;
 
 
 
+
 }
+
 
 
 
@@ -407,6 +445,7 @@ padding-top: 40px;
   text-align: center;
   color:white;
   display: flex;
+
 }
 
  /*Flechas de carousel*/
@@ -417,6 +456,7 @@ padding-top: 40px;
   cursor: pointer;
 
 }
+
 
   /*Contenedor de imagenes de carousel*/
   #div-containerImagen {
@@ -1187,6 +1227,7 @@ background: linear-gradient(90deg, #5f5e95, rgb(32, 31, 31))
 
 
 
+
 /*******************************************************************CITY DETAILS ************************************************************/
 
 
@@ -1195,7 +1236,9 @@ background: linear-gradient(90deg, #5f5e95, rgb(32, 31, 31))
        max-height: 600vh;
        min-height: 100vh;
        width: 150vw;
+
        padding-top: 100px;
+
        
        background: linear-gradient(90deg, #73a86f, rgb(51, 59, 94));
        
@@ -1293,10 +1336,12 @@ background: linear-gradient(90deg, #5f5e95, rgb(32, 31, 31))
     /*********************** Card Itineraries ******************************/
  
     .card-view{
+
       /* max-height: 940 ; */
       width: 40rem;
       margin: 0px auto;
       height: 940px;
+
       border: solid 1px rgb(164, 162, 162);
       margin-top: 10px;
       padding: 15px;
@@ -1393,6 +1438,7 @@ background: linear-gradient(90deg, #5f5e95, rgb(32, 31, 31))
       padding: 2px;
     }
 
+
     
      /***************************************** ACTIVITES BUTTON ************************************************/
    
@@ -1440,6 +1486,7 @@ background: linear-gradient(90deg, #5f5e95, rgb(32, 31, 31))
 
 
 
+
     /*********** Boton de ver mas activites ************************/
 
     .option-activity-Container{
@@ -1469,6 +1516,7 @@ background: linear-gradient(90deg, #5f5e95, rgb(32, 31, 31))
       height: 27px;
       margin-left: 70px
      }
+
     
     .dropdown-button {
       flex-direction: column;
@@ -1570,6 +1618,7 @@ background: linear-gradient(90deg, #5f5e95, rgb(32, 31, 31))
 
 
 
+
      /***************************************************************** PAGINA SIGN UP*************************************************************/
 
 
@@ -1587,6 +1636,7 @@ background: linear-gradient(90deg, #5f5e95, rgb(32, 31, 31))
       max-height: 200vh;
       width: 100vw;
       height: 115vh;
+
       background-repeat: no-repeat;
       background-size: cover;
       background-position-y: 70%;
@@ -1602,11 +1652,13 @@ background: linear-gradient(90deg, #5f5e95, rgb(32, 31, 31))
      /*********************************** formulario *******************************/
      .main-form{
       width: 109vw;
+
       height: 109vh;
       display: flex;
       align-items: center;
       justify-content: space-evenly;
       flex-direction: row;
+
     }
 
     .step-form{
@@ -1619,9 +1671,11 @@ background: linear-gradient(90deg, #5f5e95, rgb(32, 31, 31))
     .father-form{
       width: 500px;
       align-items: end;
+
     }
     
     .container-form-signup{
+
       border-radius: 6px;
       background-color: white;
       width: 500px;
@@ -1632,7 +1686,9 @@ background: linear-gradient(90deg, #5f5e95, rgb(32, 31, 31))
       flex-direction: column;
       padding-left: 59px;
     }
+
   
+
 
     .img-face{
       margin-left: 20px;
@@ -1644,6 +1700,7 @@ background: linear-gradient(90deg, #5f5e95, rgb(32, 31, 31))
       margin: 0;
       text-align: start;
     }
+
     
   
   .btn-signup{
@@ -1660,10 +1717,11 @@ background: linear-gradient(90deg, #5f5e95, rgb(32, 31, 31))
   
 
     .email-form-signup{
+
       width: 30rem;
     
      }
-     
+
    
      .password-form-sigup{
        width: 30rem;
@@ -1674,12 +1732,15 @@ background: linear-gradient(90deg, #5f5e95, rgb(32, 31, 31))
      
      
      .btn-signup:hover {
+
       background-color: #160bec;
       transition: 0.5s;
       transition: translate(2px, 2px);
     }
 
+
     
+
 
     .hr{
       width: 370px;
@@ -1811,6 +1872,7 @@ background: linear-gradient(90deg, #5f5e95, rgb(32, 31, 31))
 ´
 
 
+
     .container-names{
       display: flex;
     
@@ -1826,7 +1888,9 @@ background: linear-gradient(90deg, #5f5e95, rgb(32, 31, 31))
     }
 
     .photo-form{
+
       width: 480px;
+
     }
     
     .country{
@@ -1855,6 +1919,7 @@ background: linear-gradient(90deg, #5f5e95, rgb(32, 31, 31))
     }
 
     /******************************************* PAGINA SIGNS *************************************************/
+
 /* 
     .container-signIn{
       display: flex;
@@ -1898,10 +1963,12 @@ background: linear-gradient(90deg, #5f5e95, rgb(32, 31, 31))
       width: 100vw;
       height: 115vh;
       max-height: 200vh;
+
       background-repeat: no-repeat;
       background-size: cover;
       background-position-y: 70%;
      }
+
 
      .email-form{
       width: 30rem;
@@ -1930,6 +1997,7 @@ background: linear-gradient(90deg, #5f5e95, rgb(32, 31, 31))
       transition: 0.5s;
       transition: translate(2px, 2px);
     }
+
  
     .continue-g{
       height: 55px;
@@ -1942,7 +2010,9 @@ background: linear-gradient(90deg, #5f5e95, rgb(32, 31, 31))
      .continue-f{
       height: 55px;
       font-weight: 600;
+
       
+
      }
 
      .boton-google{
@@ -1953,10 +2023,13 @@ background: linear-gradient(90deg, #5f5e95, rgb(32, 31, 31))
     }
     
     .boton-fb{
+
       width: 29px;
+
       height: 25px;
       margin-right: 15px;
      }
+
 
     
     .container-form-signin{
@@ -2072,6 +2145,7 @@ background: linear-gradient(90deg, #5f5e95, rgb(32, 31, 31))
   
 
     }
+
 
 
 

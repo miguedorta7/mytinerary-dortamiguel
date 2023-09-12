@@ -23,6 +23,7 @@ export default function NavBar() {
     <header>
       <Navbar expand="lg" className="fw-bold">
         <Container>
+
           {mail?(
           <div className="usuario-nav">
             <div className="usuario-nav-son">
@@ -35,6 +36,7 @@ export default function NavBar() {
           }
           
           <Navbar.Brand href="#home" className="text-white"> My Tinerary </Navbar.Brand>
+
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
           
@@ -43,14 +45,17 @@ export default function NavBar() {
                 <Nav.Link className="home-navbar" as={Anchor} to={"/homepage"}>Home </Nav.Link>
               }
 
+
               {mail ?( <Nav.Link className="home-navbar"  as={Anchor} to={"/cities"} >Cities </Nav.Link>):(
                 ""
               )
                
+
               }
               
               
               <div className="login-h rounded px-3">
+
 
                 { mail?(
                   mail && <Nav.Link className=" text-light botton-out" href="#link" as={Anchor} to={"/signin"} onClick={()=>dispatch(signout())}> Log Out </Nav.Link>
@@ -70,6 +75,7 @@ export default function NavBar() {
                    
                     </>
                   )}
+
 
               </div>
             </Nav>

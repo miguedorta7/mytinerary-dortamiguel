@@ -1,7 +1,6 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import apiUrl from "../../apiUrl";
-
 const read_itineraries_from_city = createAsyncThunk(
     'read_itineraries_from_city',
     async(_id)=>{
