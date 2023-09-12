@@ -27,6 +27,7 @@ export default function HomePage() {
       
     },
     //callback que no debe retornar nada y no puede ser asincrona
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [] //array de dependencias
     //cuando esta vacio el EFECTO se ejecuta una unica vez cuando se monta el componente
     //Cuando tiene variables de dependencias el EFECTO se ejecuta (cuando se monta y) CADA VEZ que varia/cambia alguna de esas variables
@@ -35,7 +36,7 @@ export default function HomePage() {
 
   return (
     <main className="main-home">
-      <div className="div-card alig-items-center justify-content-center ">
+      <div className="div-card ">
         <div className="div-caja-card">
           <CardPage />
         </div>
