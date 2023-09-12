@@ -30,30 +30,46 @@ body {
 
 /****************************** *************************header NavBar **************************************************/
 /**********Barra de navegacion********/
+
+.header{
+  display: flex;
+  min-height: 70px;;
+}
+
+
 .navbar{
   display: grid;
   background: linear-gradient(90deg, #7181cc, rgb(90, 122, 183));
   border-radius: 2px;
-  padding-left: 150px;
+
+  padding-left: 90px;
+
   
 } 
 
 .container {
-  width: 100vw;
+
+  width: 80vw;
+
   height: 3rem;
   margin-top: 10px;
   align-items: start;
   text-align: center;
-  
 
+  margin-left: -100px;
+  
 }
 
-.navbar-nav {
 
-  width: 8rem;
-  height: 52px;
-  font-size: 1.5rem;
+
+
+.navbar-nav {
   
+  width: 8rem;
+  height: 59px;
+  font-size: 1.5rem;
+  align-items: center;
+
 }
 
 .home-navbar{
@@ -63,15 +79,27 @@ body {
 .navbar-brand {
   margin-top: 2px;
   margin-left: 225px;
-  font-size: 30px;
+
+  font-size: 27px;
   color: white;
 }
 
-
 .navbar-collapse{
   padding-left: 10px;
-
 }
+
+
+
+/* 
+/******logo Navbar*/
+.img-navbar-title{
+  width: 50px;
+  height: 50px;
+  margin-right: 25px;
+} */
+
+
+
 
 
 
@@ -87,14 +115,16 @@ body {
 
 .nav-link {
   font-size: 21px;
+  
 }
 
 .login-h {
-  width: 100%;
+  width: 200px;
   background: #4f46e5;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  
 }
 
 .login-h:hover {
@@ -103,37 +133,104 @@ body {
   transition: 0.5s;
   transition: translate(2px, 2px);
 }
+.botton-out{
+  text-align: center;
+  width: 115px;
+}
+
+
+
+
+.usuario-nav-son{
+  display: flex;
+  color: black;
+}
+.usuario-img-nav{
+  border-radius: 50%;
+}
+
+.usuario-name-nav{
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.login-container{
+  text-decoration: none;
+}
+
+
+@media screen and (max-width: 769px) {
+
+  .navbar-brand {
+    margin-top: 2px;
+    margin-left: 125px;
+    font-size: 30px;
+  } 
+
+  }
+
+
+  @media screen and (max-width: 577px) {
+
+    .header{
+      display: flex;
+      min-height: 70px;;
+    }
+    
+    .navbar{
+      display: grid;
+      background: linear-gradient(90deg, #7181cc, rgb(90, 122, 183));
+      border-radius: 2px;
+      padding-left: 90px;
+      
+    } 
+    
+    .navbar-brand {
+      margin-top: 2px;
+      margin-left: 15px;
+      font-size: 30px;
+    } 
+  
+    }
 
 
 
 
 
-/********************************************************** CARD ******************************************************/
+
+
+
+/********************************************************** CARD HOMEPAGE ******************************************************/
+
+/* .main-layou{
+  width: 100vw;
+}
+ */
+
 
 /**/
 .main-home{
-  background-image:url(/img/montaña.jpg);
-  max-width: 200vw;
-  width: 100VW;
-  height: 100vh;
-  background-size: cover;
+  background: linear-gradient(90deg, #413e4e, rgb(58, 69, 111));
+  width: 130vw;
+  max-width: 150vw;
+  height: 150vh;
+
   display: flex;
 }
 
 
 
 
-
-
 /*Contenedor padre de la Card y del Carousel*/
- .div-card {
+  .div-card {
  display: grid;
- grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+ grid-template-columns: repeat(auto-fit, minmax(100px, 100%));
  grid-template-columns: 1fr 1fr;
-margin-top: 40px;
 
+padding-top: 40px;
 
 } 
+ 
 
 
 
@@ -141,7 +238,8 @@ margin-top: 40px;
 /*Contenedor padre de la card*/
 .div-caja-card {
   height: 37rem;
-  margin-left: 70px;
+
+
   display: flex;
   justify-content: space-between;
 }
@@ -154,7 +252,9 @@ margin-top: 40px;
   border: none;
   background: none;
   font-weight: bold;
-  color:#000
+
+  color:#ffffff
+
 }
 
 /*titulo de la card*/
@@ -196,11 +296,8 @@ margin-top: 40px;
   border-radius: 8%;
 }
 
-.imagen-card:hover {
-  transition: 0.5s;
-  transform: scale(98%);
-  cursor: pointer;
-}
+
+
 
 /*Boton View More*/
 .btn-view {
@@ -226,29 +323,119 @@ margin-top: 40px;
   border-radius: 8px;
 }
 
+
+
+
+
+
+.div-card {
+  display: grid;
+
+ margin-top: 150px;
+ 
+ 
+ }
+
+
+@media screen and (max-width: 525px) {
+  /*Contenedor padre de la card*/
+.div-caja-card {
+  height: 37rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Contenedor del título, texto y boton*/
+.card {
+  margin-top: 1rem;
+  margin-left: 5em;
+  width: 400px;
+  border: none;
+  background: none;
+  font-weight: bold;
+  color:#ffffff
+}
+
+/*titulo de la card*/
+.card-header {
+  align-items: end;
+  height: 2rem;
+  padding-top: 0;
+  text-align: start;
+  border: none;
+  font-size: x-large;
+  background: none;
+  text-align: center;
+ 
+}
+.card-body {
+  margin-top: 3rem;
+  height: 50vh;
+}
+
+/*texto de la card*/
+.card-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  width: 22rem;
+  
+}
+
+/*imagen de card*/
+.imagen-card {
+  width: 350px;
+  height: 220px;
+  margin-right: 50px;
+  border-radius: 8%;
+}
+/*Boton View More*/
+.btn-view {
+  background: #4f46e5;
+  font-weight: 600;
+  width: 180px;
+  height: 4rem;
+  border-radius: 8px;
+  padding: 0px, 20px, 16px, 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  font-size: 28px;
+  margin-top: 50px;
+  margin-left: 110px;
+}
+
+
+
+
+}
+
+
+
+
 /***************************************************************** CAROUSEL *******************************************************/
 
 /*Contenedor padre de carousel*/
 .padre-carousel {
-  width: 540px;
-  height: 556px;
+  width: 50%;
+  margin-left: -60px;
 }
 
-/*Titulo del carousel*/
-.h1-popular {
-  width: 100%;
-  font-size: 2rem;
-  text-align: center;
-  margin-left: 15rem;
-  color: white;
-  margin-bottom: 1rem;
-}
+   /*Titulo del carousel*/
+   .h1-popular {
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    margin-left: 21rem;
+    color: white;
+    margin-bottom: 1rem;
+  }
 
 
 /*2do Contenedor de arrows y imagenes*/
 .div-container-carousel{
-  width: 450px;
-  height: 550px;
+  width: 25vw;
+  height: 500px;
   margin-right: 100px;
   margin-left: 150px;
   padding: 0px;
@@ -258,32 +445,32 @@ margin-top: 40px;
   text-align: center;
   color:white;
   display: flex;
+
 }
 
-/*Flechas de carousel*/
-.arrows {
+ /*Flechas de carousel*/
+ .arrows {
   position: relative;
-  margin-bottom: 54px;
+  margin-bottom: 4px;
   width: 5%;
   cursor: pointer;
 
 }
 
-/*Contenedor de imagenes de carousel*/
 
-#div-containerImagen {
-  width: 640px;
+  /*Contenedor de imagenes de carousel*/
+  #div-containerImagen {
+    width: 640px;
+    height: 650px;
+    margin: 10px;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    
+  }
 
-
-  height: 650px;
-  margin: 10px;
-  margin-top: 0px;
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  
-}
-
+    /*2do imagenes*/
 .div-card-carousel{
   display: flex;
   width: 650px;
@@ -292,24 +479,148 @@ margin-top: 40px;
 }
 
 
-
-
-
-
 /*contenedor de imagenes del carousel*/
-.div-img {
-  margin: 10px;
-  color: white;
-  text-decoration: none;
+    .div-img {
+      margin: 10px;
+      color: white;
+      text-decoration: none;
+      background-size: cover;
+    }
+
+    /*imagen del carousel*/
+    .img {
+      justify-content: space-between;
+      padding: 2px;
+      width: 300px;
+      height: 200px;
+      border-radius: 3%;
+      box-shadow: 3px 4px 10px 0 #000;
+    }
+    
+    .img:hover {
+      transition: 0.5s;
+      transform: scale(95%);
+      cursor: pointer;
+      
+    }
+
+
+    
+    /*Texto del carousel*/
+    .text-img {
+      color: white;
+      max-width: auto;
+      font-size: 20px;
+      padding-top: 5px;
+      margin-right: 10px;
+    }
+    
+    /*ubicacion logo*/
+    .ubicacion{
+      width: 28px;
+      height: 25px;
+      margin-bottom: 6px;
+    
+    
+    }
+
+/**********************************************************MEDIA CAROUSEL ***************************************************/
+ 
+@media screen and (max-width: 1308px) {
+  .padre-carousel {
+    width: 50%;
+    margin-left: -60px;
+  }
   
-  background-size: cover;
+     /*Titulo del carousel*/
+     .h1-popular {
+      width: 100%;
+      font-size: 2rem;
+      text-align: center;
+      margin-left: 15rem;
+      color: white;
+      margin-bottom: 1rem;
+    }
+  
+  
+  /*2do Contenedor de arrows y imagenes*/
+  .div-container-carousel{
+    width: 25vw;
+    height: 500px;
+    margin-right: 100px;
+    margin-left: 80px;
+    padding: 0px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color:white;
+    display: flex;
+  }
+  
+   /*Flechas de carousel*/
+   .arrows {
+    position: relative;
+    margin-bottom: 4px;
+    width: 5%;
+    cursor: pointer;
+  
+  }
+
 }
 
-/*imagen del carousel*/
+@media screen and (max-width: 1236px) {
+  .padre-carousel {
+    width: 100%;
+    margin-left: -90px;
+  }
+  
+     /*Titulo del carousel*/
+     .h1-popular {
+      width: 100%;
+      font-size: 2rem;
+      text-align: center;
+      margin-left: 15rem;
+      color: white;
+      margin-bottom: 1rem;
+    }
+  
+  
+  /*2do Contenedor de arrows y imagenes*/
+  .div-container-carousel{
+    width: 25vw;
+    height: 500px;
+    margin-left: 70px;
+    padding: 0px;
+
+    flex-direction: column;
+  }
+  
+   /*Flechas de carousel*/
+   .arrows {
+    position: relative;
+    margin-bottom: 4px;
+    width: 5%;
+    cursor: pointer;
+  
+  }
+
+}
+
+@media screen and (max-width: 1128px) {
+  .main-home{
+    background: linear-gradient(90deg, #413e4e, rgb(58, 69, 111));
+    width: 130vw;
+    max-width: 180vw;
+    height: 200vh;
+    display: flex;
+  }
+  
+
 .img {
   justify-content: space-between;
   padding: 2px;
-  width: 300px;
+  width: 90%;
   height: 200px;
   border-radius: 3%;
   box-shadow: 3px 4px 10px 0 #000;
@@ -322,23 +633,293 @@ margin-top: 40px;
   
 }
 
-/*Texto del carousel*/
-.text-img {
+.div-card-carousel{
+
+  width: 550px;
+  height: 500px;
+}
+ #div-containerImagen {
+    width: 540px;
+    height: 650px;
+    margin: 0px;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    position: relative;
+    right: 100px;
+    
+  }
+
+    /*2do imagenes*/
+.div-card-carousel{
+  display: flex;
+  width: 650px;
+  flex-wrap: wrap;
+  height: 500px;
+}
+.h1-popular {
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
+  margin-left: 6rem;
   color: white;
-  max-width: auto;
-  font-size: 20px;
-  padding-top: 5px;
-  margin-right: 10px;
+  margin-bottom: 1rem;
+}
+.div-container-carousel{
+  width: 600px;
+  height: 500px;
+  margin-right: 100px;
+  margin-left: 100px;
+  padding: 0px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color:white;
+  display: flex;
 }
 
-/*ubicacion logo*/
-.ubicacion{
-  width: 28px;
-  height: 25px;
-  margin-bottom: 6px;
+ /*Flechas de carousel*/
+ .arrows {
+  position: relative;
+  right: 100px;
+  margin-bottom: 4px;
+  width: 5%;
+  cursor: pointer;
+
+}
+
+}
+
+
+@media screen and (max-width: 1127px) {
+ 
+  .img {
+    justify-content: space-between;
+    padding: 2px;
+    width: 70%;
+    height: 200px;
+    border-radius: 3%;
+    box-shadow: 3px 4px 10px 0 #000;
+  }
+ 
+ 
+  .padre-carousel {
+    width: 100%;
+    margin-left: -90px;
+    position: relative;
+    top: 600px;
+    right: 450px;
+  }
+ 
+ 
+ 
+  .div-container-carousel{
+    width: 50vw;
+    height: 400px;
+    margin-right: 100px;
+    margin-left: 100px;
+    padding: 0px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color:white;
+    display: flex;
+    position: relative;
+    top: 100px;
+    left: 150px;
+  }
+  .arrows {
+    position: relative;
+    right: 100px;
+    margin-bottom: 4px;
+    width: 5%;
+    cursor: pointer;
+    top: 250px;
+  }
+  .main-home{
+  background: linear-gradient(90deg, #413e4e, rgb(58, 69, 111));
+  width: 130vw;
+  max-width: 300vw;
+  height: 280vh;
+  display: flex;
+}
 
 
 }
+
+@media screen and (max-width: 1127px) {
+ 
+  .img {
+    justify-content: space-around;
+    padding: 2px;
+    width: 90%;
+    height: 180px;
+    border-radius: 3%;
+    box-shadow: 3px 4px 10px 0 #000;
+  }
+
+  .h1-popular {
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    margin-left: 6rem;
+    color: white;
+    margin-bottom: 1rem;
+    position: relative;
+    left: 70px;
+  }
+    .div-container-carousel{
+    width: 120%;
+    height: 400px;
+    margin-right: 100px;
+    margin-left: 100px;
+    padding: 0px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color:white;
+    display: flex;
+    position: relative;
+    top: 100px;
+    left: 145px;
+  }
+
+   
+  .padre-carousel {
+    width: 50%;
+    margin-left: -100px;
+    position: relative;
+    top: 700px;
+    right: 450px;
+  }
+  .div-card-carousel{
+    display: flex;
+    width: 650px;
+    height: 500px;
+  }
+  #div-containerImagen {
+    width: 300px;
+    margin-top: 0px;
+    display: flex;
+    text-align: center;
+    
+  }
+
+  .arrows {
+    position: relative;
+    right: 100px;
+    margin-bottom: 4px;
+    width: 5%;
+    cursor: pointer;
+
+  
+  }
+  .main-home{
+    background: linear-gradient(90deg, #413e4e, rgb(58, 69, 111));
+    width: 130vw;
+    max-width: 800vw;
+    height: 300vh;
+    display: flex;
+  }
+  
+}
+
+
+@media screen and (max-width: 619px) {
+ 
+  .img {
+    justify-content: space-around;
+    padding: 2px;
+    width: 90%;
+    height: 180px;
+    border-radius: 3%;
+    box-shadow: 3px 4px 10px 0 #000;
+  }
+
+  .h1-popular {
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    margin-left: 6rem;
+    color: white;
+    margin-bottom: 1rem;
+    position: relative;
+    left: 70px;
+  }
+    .div-container-carousel{
+    width: 120%;
+    height: 400px;
+    margin-right: 100px;
+    margin-left: 100px;
+    padding: 0px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color:white;
+    display: flex;
+    position: relative;
+    top: 100px;
+    left: 145px;
+  }
+
+   
+  .padre-carousel {
+    width: 50%;
+    margin-left: -100px;
+    position: relative;
+    top: 700px;
+    right: 450px;
+  }
+  .div-card-carousel{
+    display: flex;
+    width: 650px;
+    height: 500px;
+  }
+  #div-containerImagen {
+    width: 300px;
+    margin-top: 0px;
+    display: flex;
+    text-align: center;
+    
+  }
+
+  .arrows {
+    position: relative;
+    right: 100px;
+    margin-bottom: 4px;
+    width: 5%;
+    cursor: pointer;
+
+  
+  }
+  .main-home{
+    background: linear-gradient(90deg, #413e4e, rgb(58, 69, 111));
+    width: 130vw;
+    max-width: 800vw;
+    height: 300vh;
+    display: flex;
+  }
+  
+  
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+  
 
 /*************************************** Footer ***************************************/
 
@@ -377,7 +958,7 @@ margin-top: 40px;
 
 /************************************************************* MEDIAS HOMEPAGE CAROUSEL**************************************/
 
-
+/* 
 @media screen and (max-width: 1468px) {
   .div-card {
     width: 100%;
@@ -398,25 +979,6 @@ margin-top: 40px;
 }
 
 
-  
-  .container {
-    
-    height: 3rem;
-    align-items: start;
-    text-align: center;
-    margin-left: -100px;
-    
-  }
-  
-  
-  .div-card {
-    display: grid;
-
-   margin-top: 150px;
-   
-   
-   }
-    
 
 @media screen and (max-width:992px) {
   .container {
@@ -462,123 +1024,19 @@ margin-top: 40px;
     margin-left: 100px;
 }
 
-@media screen and (max-width: 780px) {
-
-  .navbar-brand {
-    margin-top: 2px;
-    margin-left: 125px;
-    font-size: 30px;
-  } 
-
-  }
 
   @media screen and (max-width: 732px) {
-
-
     .padre-carousel {
       width: 50rem;
       height: 50rem;
-    }
-    
-    /*Titulo del carousel*/
-    .h1-popular {
-      width: 100%;
-      font-size: 2rem;
-      text-align: center;
-      margin-left: 15rem;
-      color: white;
-      margin-bottom: 1rem;
-    }
-    
-    
-    /*2do Contenedor de arrows y imagenes*/
-    .div-container-carousel{
-      width: 450px;
-      height: 550px;
-      margin-right: 100px;
-      margin-left: 150px;
-      padding: 0px;
-      flex-wrap: wrap;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      color:white;
-      display: flex;
-    }
-    
-    /*Flechas de carousel*/
-    .arrows {
-      position: relative;
-      margin-bottom: 54px;
-      width: 5%;
-      cursor: pointer;
-    
-    }
-    
-    /*Contenedor de imagenes de carousel*/
-    #div-containerImagen {
-      width: 640px;
-      height: 650px;
-      margin: 10px;
-      margin-top: 0px;
-      display: flex;
-      flex-direction: row;
-      text-align: center;
-      
-    }
-    
-    .div-card-carousel{
-      display: flex;
-      width: 650px;
-      flex-wrap: wrap;
-      height: 500px;
-    }
-    
-    /*contenedor de imagenes del carousel*/
-    .div-img {
-      margin: 10px;
-      color: white;
-      text-decoration: none;
-      
-      background-size: cover;
-    }
-    
-    /*imagen del carousel*/
-    .img {
-      justify-content: space-between;
-      padding: 2px;
-      width: 300px;
-      height: 200px;
-      border-radius: 3%;
-      box-shadow: 3px 4px 10px 0 #000;
-    }
-    
-    .img:hover {
-      transition: 0.5s;
-      transform: scale(95%);
-      cursor: pointer;
-      
-    }
-    
-    /*Texto del carousel*/
-    .text-img {
-      color: white;
-      max-width: auto;
-      font-size: 20px;
-      padding-top: 5px;
-      margin-right: 10px;
-    }
-    
-    /*ubicacion logo*/
-    .ubicacion{
-      width: 28px;
-      height: 25px;
-      margin-bottom: 6px;
-    
-    
-    }
 
-  }
+
+    }
+     */
+ 
+  
+    
+
 
 
 /****************************************************PAGINA ERRORES DE RUTA ********************************************************************/
@@ -624,6 +1082,7 @@ background: linear-gradient(90deg, #5f5e95, rgb(32, 31, 31))
   grid-template-rows: 1fr;
   gap: 100px;
   grid-template-columns: 1fr;
+ 
 } 
 
 
@@ -638,6 +1097,7 @@ background: linear-gradient(90deg, #5f5e95, rgb(32, 31, 31))
   background-size: cover;
   background-position-y: 70%;
   margin-top: 1px;
+  
 }
 
 
@@ -674,7 +1134,6 @@ background: linear-gradient(90deg, #5f5e95, rgb(32, 31, 31))
     margin-bottom: 40px;
   }
 
-
   .img-notfound{
     width: 140px;
     height: 140px;
@@ -686,19 +1145,16 @@ background: linear-gradient(90deg, #5f5e95, rgb(32, 31, 31))
   
   .cards-container-cities{
     width: 100vw;
-
     display: flex;
     flex-wrap: wrap;
-    gap:145px;
+    gap:120px;
     margin-bottom: 140px;
-    
-
     
   }
   
   
   .card-city{
-    height:205px;
+    height:240px;
     border-radius: 1%;
     align-items: start;
     
@@ -708,15 +1164,15 @@ background: linear-gradient(90deg, #5f5e95, rgb(32, 31, 31))
   .card-imagen-container{    
     height: 22vh;
     width: 315px;
-    
+    margin-right: 100px;
   }
   
 
   .card-imagen{
     object-fit: cover;
-    width: 455px;
+    width: 399px;
     height: 260px;
-    margin-left: 35px;
+    margin-left: 0px;
     margin-top: 15px;
     
   }
@@ -780,6 +1236,9 @@ background: linear-gradient(90deg, #5f5e95, rgb(32, 31, 31))
        max-height: 600vh;
        min-height: 100vh;
        width: 150vw;
+
+       padding-top: 100px;
+
        
        background: linear-gradient(90deg, #73a86f, rgb(51, 59, 94));
        
@@ -877,9 +1336,12 @@ background: linear-gradient(90deg, #5f5e95, rgb(32, 31, 31))
     /*********************** Card Itineraries ******************************/
  
     .card-view{
+
+      /* max-height: 940 ; */
       width: 40rem;
       margin: 0px auto;
-      height: 760px;
+      height: 940px;
+
       border: solid 1px rgb(164, 162, 162);
       margin-top: 10px;
       padding: 15px;
@@ -976,6 +1438,55 @@ background: linear-gradient(90deg, #5f5e95, rgb(32, 31, 31))
       padding: 2px;
     }
 
+
+    
+     /***************************************** ACTIVITES BUTTON ************************************************/
+   
+ /*    .container-father-activity{
+     
+    }
+ */
+     .card-group-activity{
+      width: 32%;
+      height: 30%;
+      display: flex;
+      margin-top: 20px;
+      justify-content:center;
+      margin-left: 5px;
+       flex-wrap: wrap;
+       flex-direction: column;
+      }
+      
+      .card-container-activity{
+        width: 100%;
+        height: 100%;
+        padding: 5px; 
+        object-fit: cover;
+      }
+
+
+       .card-img-activities{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+       }
+
+
+      .card-title-activity{
+        
+        font-size: 20px;
+      }
+      
+      .comments{
+        margin-top: 10px;
+      }
+
+
+
+
+
+
+
     /*********** Boton de ver mas activites ************************/
 
     .option-activity-Container{
@@ -999,6 +1510,13 @@ background: linear-gradient(90deg, #5f5e95, rgb(32, 31, 31))
       
       
     }
+
+    .button-activity{
+      width: 27px;
+      height: 27px;
+      margin-left: 70px
+     }
+
     
     .dropdown-button {
       flex-direction: column;
@@ -1100,15 +1618,25 @@ background: linear-gradient(90deg, #5f5e95, rgb(32, 31, 31))
 
 
 
-     /***************************************************************** PAGINA FORM *************************************************************/
+
+     /***************************************************************** PAGINA SIGN UP*************************************************************/
 
 
-     .father-page{
+      .father-singup{
+        max-width: 180vw;
+        width: 100vw;
+        max-height: 200vh;
+
+ 
+      }
+     
+       .father-page{
       background-image: url(img/pexels-photo-6039250.jpeg);
-      max-width: 100vw;
-      
+      max-width: 180vw;
+      max-height: 200vh;
       width: 100vw;
-      height: 105vh;
+      height: 115vh;
+
       background-repeat: no-repeat;
       background-size: cover;
       background-position-y: 70%;
@@ -1124,11 +1652,13 @@ background: linear-gradient(90deg, #5f5e95, rgb(32, 31, 31))
      /*********************************** formulario *******************************/
      .main-form{
       width: 109vw;
-      height: 90vh;
+
+      height: 109vh;
       display: flex;
       align-items: center;
       justify-content: space-evenly;
-      
+      flex-direction: row;
+
     }
 
     .step-form{
@@ -1141,10 +1671,11 @@ background: linear-gradient(90deg, #5f5e95, rgb(32, 31, 31))
     .father-form{
       width: 500px;
       align-items: end;
-      
+
     }
     
-    .container-form{
+    .container-form-signup{
+
       border-radius: 6px;
       background-color: white;
       width: 500px;
@@ -1155,6 +1686,9 @@ background: linear-gradient(90deg, #5f5e95, rgb(32, 31, 31))
       flex-direction: column;
       padding-left: 59px;
     }
+
+  
+
 
     .img-face{
       margin-left: 20px;
@@ -1167,33 +1701,46 @@ background: linear-gradient(90deg, #5f5e95, rgb(32, 31, 31))
       text-align: start;
     }
 
-    .email-form{
+    
+  
+  .btn-signup{
+    position: relative;
+    bottom: 120px;
+    margin-left: 17rem;
+    background-color:#4f46e5;
+    border: #3a32cf;;
+    height: 45px;
+    margin-bottom: 100px;
+   }
+
+  
+  
+
+    .email-form-signup{
+
       width: 30rem;
     
      }
-     
-     .password-form{
+
+   
+     .password-form-sigup{
        width: 30rem;
-      padding-bottom: 40px;
       position: relative;
-      bottom: 20px;
+
      }
 
-     .btn-form{
-      margin-bottom: 40px;
-      margin-left: 18rem;
-      background-color:#4f46e5;
-      border: #3a32cf;;
-      height: 45px;
-     }
+     
+     
+     .btn-signup:hover {
 
-     .btn-form:hover {
       background-color: #160bec;
       transition: 0.5s;
       transition: translate(2px, 2px);
     }
-  
-  
+
+
+    
+
 
     .hr{
       width: 370px;
@@ -1208,8 +1755,122 @@ background: linear-gradient(90deg, #5f5e95, rgb(32, 31, 31))
     }
 
 
+    @media only screen and (max-width:1011px) {
+      .main-form{
+        width: 100%;
+        height: 109vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+      }
+      
+    }
+
+    @media only screen and (max-width:988px) {
+      .main-form{
+        width: 90%;
+        height: 129vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+      }
+
+  
+      .father-page{
+        background-image: url(img/pexels-photo-6039250.jpeg);
+        max-width: 180vw;
+        max-height: 200vh;
+        width: 100vw;
+        height: 135vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: 70%;
+       }
+      
+    }
+
+
+    @media only screen and (max-width:577px) {
+      .container-form-signup{
+        border-radius: 6px;
+        background-color: white;
+        width: 450px;
+        height: 730px;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        flex-direction: column;
+        padding-left: 59px;
+        margin-left: 45px;;
+      }
+      .email-form-signup{
+        width: 22rem;
+        
+      
+       }
+       .password-form-sigup{
+        width: 22rem;
+       position: relative;
+ 
+      }
+      .input-photo-signup{
+        width: 20.5rem;
+      }
+      .father-page{
+        background-image: url(img/pexels-photo-6039250.jpeg);
+        max-width: 140vw;
+        max-height: 200vh;
+        width: 180vw;
+        height: 145vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: 70%;
+       }
+       .btn-signup{
+        position: relative;
+        bottom: 120px;
+        margin-left: 14rem;
+        background-color:#4f46e5;
+        border: #3a32cf;;
+        height: 45px;
+        margin-bottom: 100px;
+       }
+  
+      }
+
+      
+      @media only screen and (max-width:344px) {
+        .container-form-signup{
+          border-radius: 6px;
+          background-color: white;
+          width: 450px;
+          height: 730px;
+          display: flex;
+          justify-content: space-between;
+          align-items: start;
+          flex-direction: column;
+          padding-left: 109px;
+          margin-left: 45px;;
+        }
+        .father-page{
+          background-image: url(img/pexels-photo-6039250.jpeg);
+          max-width: 140vw;
+          max-height: 200vh;
+          width: 180vw;
+          height: 145vh;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position-y: 70%;
+         }
+      }
+
+
 
     /**************************************************************************************** PAGINA FORM 2 **********************************************/
+´
+
 
 
     .container-names{
@@ -1227,7 +1888,9 @@ background: linear-gradient(90deg, #5f5e95, rgb(32, 31, 31))
     }
 
     .photo-form{
-      width: 487px;
+
+      width: 480px;
+
     }
     
     .country{
@@ -1257,18 +1920,83 @@ background: linear-gradient(90deg, #5f5e95, rgb(32, 31, 31))
 
     /******************************************* PAGINA SIGNS *************************************************/
 
+/* 
+    .container-signIn{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      gap: 300px;
+      align-items: center;
+    } */
+
+    .container-form-signin{
+      border-radius: 6px;
+      background-color: white;
+      width: 500px;
+      height: 700px;
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      flex-direction: column;
+      padding-left: 59px;
+    }
+
+
+
+    .main-form-signin{
+      width: 100vw;
+      max-width: 200vw;
+      max-height: 200vh;
+      height: 100vh !important; 
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: row;
+      flex-wrap: wrap;
+      object-fit: cover;
+    }
+    
+
     .father-page-sign{
       background-image: url(img/backgroundSign.jpg);
-      max-width: 100vw;
-      
+      max-width: 100%;
       width: 100vw;
-      height: 105vh;
+      height: 115vh;
+      max-height: 200vh;
+
       background-repeat: no-repeat;
       background-size: cover;
       background-position-y: 70%;
      }
 
-     /*Botones continue with*/
+
+     .email-form{
+      width: 30rem;
+      margin-top: 50px;
+      height: 55px;
+     }
+
+
+     .password-form{
+      width: 30rem;
+     padding-bottom: 40px;
+     position: relative;
+     bottom: 20px;
+    }
+
+     .btn-signin{
+      margin-bottom: 40px;
+      margin-left: 18rem;
+      background-color:#4f46e5;
+      border: #3a32cf;;
+      height: 45px;
+   
+     }
+     .btn-signin:hover {
+      background-color: #160bec;
+      transition: 0.5s;
+      transition: translate(2px, 2px);
+    }
 
  
     .continue-g{
@@ -1282,6 +2010,9 @@ background: linear-gradient(90deg, #5f5e95, rgb(32, 31, 31))
      .continue-f{
       height: 55px;
       font-weight: 600;
+
+      
+
      }
 
      .boton-google{
@@ -1293,15 +2024,128 @@ background: linear-gradient(90deg, #5f5e95, rgb(32, 31, 31))
     
     .boton-fb{
 
-      width: 2px;
+      width: 29px;
+
       height: 25px;
       margin-right: 15px;
      }
 
-   
-     .button-activity{
-      width: 27px;
-      height: 27px;
-      margin-left: 70px
 
+    
+    .container-form-signin{
+      margin-top: 5px;
      }
+   
+     
+    @media only screen and (max-width:992px) {
+      
+      .father-page-sign{
+        height: 130vh;
+      }
+      .father-signin{
+        height: 100px;
+      }
+    }
+    .main-form-signin{
+      width: 100vw;
+      height: 140vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: row;
+     flex-wrap: wrap;
+     
+    }
+     .h1-form{
+      margin-top: 100px;
+    }
+
+    @media only screen and (max-width:720px) {
+      .father-page-sign{
+        height: 133vh;
+      }
+       
+      .father-signin{
+        width: 100vw;
+        height: 130vh;
+      }
+      .main-form-signin{
+        width: 100vw;
+        height: 130vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+       flex-wrap: wrap;
+       
+      }
+      .h1-form{
+        margin-top: 100px;
+      }
+    }
+
+    @media only screen and (max-width:577px) {
+      .father-page-sign{
+        height: 140vh;
+        width: 140vw;
+      }
+       
+      .father-signin{
+        width: 120vw;
+        height: 120vh;
+      }
+      .main-form-signin{
+        width: 100vw;
+        height: 140vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+       flex-wrap: wrap;
+       
+      }
+      .h1-form{
+        margin-top: 100px;
+        margin-left: 10px;
+      }
+      .email-form{
+        width: 20rem;
+        margin-top: 50px;
+        height: 55px;
+       }
+       .password-form{
+        width: 20rem;
+       padding-bottom: 40px;
+       position: relative;
+       bottom: 20px;
+      }
+
+
+      .container-form-signin{
+        border-radius: 6px;
+        background-color: white;
+        width: 420px;
+        height: 700px;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        flex-direction: column;
+        padding-left: 59px;
+        margin-left: 45px;
+      }
+      .btn-signin{
+        margin-left: 100px;
+      }
+       .p-policy{
+        font-size: small;
+        width: 300px;
+        text-align: start;
+      }
+      
+  
+
+    }
+
+
+
+

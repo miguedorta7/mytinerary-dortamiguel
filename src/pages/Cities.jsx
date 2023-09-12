@@ -9,13 +9,15 @@ const { read_cities } = city_actions;
 
 export default function Cities() {
   const cities = useSelector((store) => store.cities.cities);
-  const [reEffect, setReEffect] = useState(true);
+
+  const [reEffect, setReEffect] = useState([true]);
   const text = useRef();
   const dispatch = useDispatch();
   console.log(cities);
 
   useEffect(() => {
     dispatch(read_cities({ text: text.current?.value }));
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [reEffect]);
 
   function handleFilter() {

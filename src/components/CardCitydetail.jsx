@@ -12,7 +12,10 @@ export default function CardCityDetail() {
     const dispatch = useDispatch();
     useEffect(() => {
       dispatch(read_city({ _id }));
-    }, [_id, dispatch]);
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
+
 
 
   return (
