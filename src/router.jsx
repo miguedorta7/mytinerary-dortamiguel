@@ -12,7 +12,6 @@ import SignUp from "./pages/SignUp";
 import Activities from "./components/Activities";
 
 
-
 const router = createBrowserRouter([
   {
     path: "/", 
@@ -23,7 +22,6 @@ const router = createBrowserRouter([
         { path: "/homePage", element: <HomePage /> },
         { path: "/cities", element: <Cities /> },
         { path: "/city/:_id", element: <CityDetail /> },
-
         { path: "/activities/:itinerary_id", element: <Activities /> },
 
         { path: "/*", element: <NotFound /> }
@@ -45,7 +43,6 @@ const router = createBrowserRouter([
     element: <NavbarSigns/>,
     children: [
       { path: "/signin", element: <SignIn /> },
-
 
     ]
   } 

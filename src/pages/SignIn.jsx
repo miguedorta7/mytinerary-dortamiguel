@@ -57,16 +57,15 @@ export default function SignIn() {
     <div className="father-singup">
       <main className="main-form">
 
-
         <article>
           <h1 className="h1-form">My Tinerary</h1>
         </article>
         <aside className="father-form">
-
           <form className="container-form-signin">
             <h6 className="step-form"></h6>
             <h3 className="create-text">Sign In</h3>
-            <p>New user? <Anchor to={"/signup"} href=""> Create an account</Anchor></p>
+            <p >New user? <Anchor to={"/signup"} href="" className="create-account-text"> Create an account</Anchor></p>
+
             <div className="row mb-3 email-form">
               <div className="col-sm-10">
                 <input
@@ -108,7 +107,6 @@ export default function SignIn() {
             </div>
           </form>
         </aside>
-
       </main>
     </div>
   );

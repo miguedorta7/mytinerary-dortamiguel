@@ -4,7 +4,6 @@ import Card from 'react-bootstrap/Card';
 import { Link as Anchor } from "react-router-dom";
 
 // eslint-disable-next-line react/prop-types
-
 function BasicExample({src,text,cityId}) {
   return (
     <Card className='card-city' style={{ width: '18rem' }}>
@@ -18,7 +17,6 @@ function BasicExample({src,text,cityId}) {
     </Card>
   );
 }
-
 
 export default BasicExample;
 

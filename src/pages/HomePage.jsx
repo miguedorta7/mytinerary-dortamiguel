@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import CardPage from "../components/CardPage";
 import Carousel from "../components/Carousel";
-
 /* import axios from "axios";
 import apiUrl from "../apiUrl"; */
 import { useSelector,useDispatch } from "react-redux";
@@ -40,14 +39,12 @@ export default function HomePage() {
 
   return (
     <main className="main-home">
-
-      <div className="div-card ">
-
+      <div className="div-cardContainerFlex">
         <div className="div-caja-card">
           <CardPage />
         </div>
-        <div className="padre-carousel">
-          <h1 className="h1-popular">Popular Mytineraries!</h1>
+        <div className="div-caja-carousel">
+
           <Carousel data={carousel} />
         </div>
       </div>
