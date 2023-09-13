@@ -23,6 +23,7 @@ const router = createBrowserRouter([
         { path: "/cities", element: <Cities /> },
         { path: "/city/:_id", element: <CityDetail /> },
         { path: "/activities/:itinerary_id", element: <Activities /> },
+
         { path: "/*", element: <NotFound /> }
      
     ],
@@ -31,8 +32,10 @@ const router = createBrowserRouter([
     path: "/", 
     element: <NavbarLayoutForm/>,
     children: [
+
     /*   { path: "/form", element: <Form /> }, */
       { path: "/signup", element: <SignUp/> },
+
     ]
   }, 
   {
@@ -40,6 +43,7 @@ const router = createBrowserRouter([
     element: <NavbarSigns/>,
     children: [
       { path: "/signin", element: <SignIn /> },
+
     ]
   } 
 ]);

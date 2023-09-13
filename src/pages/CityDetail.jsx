@@ -18,6 +18,7 @@ export default function CityDetail() {
             </Anchor>
           </div>
         </div>
+
       </main>
     </div>
   );

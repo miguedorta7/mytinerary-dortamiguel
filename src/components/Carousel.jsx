@@ -35,6 +35,7 @@ export default function Carousel({ data }) {
   }
   
   return (
+
     <div className="div-cajaHijo-Carousel">
       <h1 className="h1-carousel">Popular Mytineraries!</h1>
       <div className="nieto-carousel">
@@ -42,6 +43,7 @@ export default function Carousel({ data }) {
       <div id="div-containerImagen">
         <div className="div-card-carousel">
           {data.slice(counter, counterTo).map((each) => (
+
           <CardPolaroid
           key={each._id}
           src={each.photo}

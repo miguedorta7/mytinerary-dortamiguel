@@ -7,6 +7,7 @@ import { useSelector,useDispatch } from "react-redux";
 import city_actions from "../store/actions/cities";
 const {read_carousel} = city_actions
 
+
 export default function HomePage() {
 
   //const store = useSelector(store=>store)
@@ -19,12 +20,14 @@ export default function HomePage() {
 
   useEffect(
     () => {
+
       if(carousel.length === 0){
         dispatch(
           read_carousel())
 
       }
       
+
     },
     //callback que no debe retornar nada y no puede ser asincrona
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -41,6 +44,7 @@ export default function HomePage() {
           <CardPage />
         </div>
         <div className="div-caja-carousel">
+
           <Carousel data={carousel} />
         </div>
       </div>

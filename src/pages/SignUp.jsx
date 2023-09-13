@@ -53,7 +53,9 @@ export default function SignUp() {
   }
 
   return (
+
     <div className="father-singup">
+
       <main className="main-form">
         <article>
           <h1 className="h1-form">My Tinerary</h1>
@@ -197,9 +199,11 @@ export default function SignUp() {
               className="btn btn-primary btn-form btn-signup"
               onClick={handlerSignUp}
             />
+
           </form>
         </aside>
       </main>
     </div>
   );
+
 }

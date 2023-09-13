@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useSelector } from 'react-redux';
 import Swal from 'sweetalert2';
 
+
 function LikeButton() {
   const [isLiked, setIsLiked] = useState(false);
   const [likeCount, setLikeCount] = useState(0);
@@ -26,6 +27,7 @@ function LikeButton() {
         setIsLiked(false);
         setLikeCount(likeCount - 1);
       }
+
     }
   };
 

@@ -1,3 +1,4 @@
+
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 import LikeButton from "../components/ButtonLike";
@@ -81,9 +82,11 @@ export default function CardsItineraries() {
   const { _id } = useParams();
   const itineraries = useSelector((store) => store.itineraries.itineraries_from_city);
 
+
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(read_itineraries_from_city(_id));
+
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

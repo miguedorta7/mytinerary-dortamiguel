@@ -1,3 +1,4 @@
+
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -11,8 +12,10 @@ export default function CardCityDetail() {
     const dispatch = useDispatch();
     useEffect(() => {
       dispatch(read_city({ _id }));
+
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
+
 
 
   return (
@@ -33,3 +36,4 @@ export default function CardCityDetail() {
     </div>
   )
 }
+

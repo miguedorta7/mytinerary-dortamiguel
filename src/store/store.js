@@ -10,5 +10,6 @@ export default configureStore({
         itineraries: itinerary_reducer,
         users: user_reducer,
         activities: activity_reducer 
+
     }
 })
