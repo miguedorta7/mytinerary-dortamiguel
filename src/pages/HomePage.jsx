@@ -36,12 +36,11 @@ export default function HomePage() {
 
   return (
     <main className="main-home">
-      <div className="div-card ">
+      <div className="div-cardContainerFlex">
         <div className="div-caja-card">
           <CardPage />
         </div>
-        <div className="padre-carousel">
-          <h1 className="h1-popular">Popular Mytineraries!</h1>
+        <div className="div-caja-carousel">
           <Carousel data={carousel} />
         </div>
       </div>

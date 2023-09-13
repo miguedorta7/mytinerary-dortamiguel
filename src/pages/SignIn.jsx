@@ -63,7 +63,7 @@ export default function SignIn() {
           <form className="container-form-signin">
             <h6 className="step-form"></h6>
             <h3 className="create-text">Sign In</h3>
-            <p>New user? <Anchor to={"/signup"} href=""> Create an account</Anchor></p>
+            <p >New user? <Anchor to={"/signup"} href="" className="create-account-text"> Create an account</Anchor></p>
             <div className="row mb-3 email-form">
               <div className="col-sm-10">
                 <input
